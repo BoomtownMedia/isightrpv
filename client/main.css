@@ -12,16 +12,20 @@
 video {
   position: absolute;
   z-index: -1;
-  opacity: 1 ;
+  opacity: .9 ;
   width: 100%;
 }
-
+/*.page-header .container {
+  padding-top: 20% !important;
+}*/
 .page-header .container h3 {
   font-size: 50px !important;
+  font-weight: bolder;
 }
 .page-header .container h4{
   border-bottom: 1px solid #007fff;
-  display: inline-block 
+  display: inline-block;
+  font-weigth: bolder;
 }
 
 @media only screen and (max-width: 479px) and (min-width: 0px){
@@ -32,12 +36,20 @@ video {
 .header-1 {
   background-image: url('/images/frontpage.jpg');
 }
-.header-1 .page-header .container h3 {
-  font-size: 25px;
+.page-header .container h3 {
+  font-size: 25px !important;
 }
 
-header .container{
-  padding-top: 90px;
+.page-header .container{
+  padding-top: 90px !important;
+  height: 400px !important;
 }
 
+}
+
+@media only screen and (min-width: 768px) {
+  .page-header .container{
+    padding-top: 40px !important;
+  }
+  }
 }
