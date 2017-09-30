@@ -1,0 +1,43 @@
+/* CSS declarations go here */
+
+.video-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+  opacity: 1 ;
+  width: 100%;
+}
+
+.page-header .container h3 {
+  font-size: 50px !important;
+}
+.page-header .container h4{
+  border-bottom: 1px solid #007fff;
+  display: inline-block 
+}
+
+@media only screen and (max-width: 479px) and (min-width: 0px){
+.video-container {
+    display:none !important;
+}
+
+.header-1 {
+  background-image: url('/images/frontpage.jpg');
+}
+.header-1 .page-header .container h3 {
+  font-size: 25px;
+}
+
+header .container{
+  padding-top: 90px;
+}
+
+}
