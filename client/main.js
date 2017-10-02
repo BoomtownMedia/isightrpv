@@ -1,22 +1,27 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
+Template.main.events({
 
-import './main.html';
 
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
+// jquery contact form find data itmems
 
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
+    'submit #contactForm': function(event){
+    event.preventDefault();
+    var element = $(event.target);
+    var name = element.find("#name").val();
+    var email = element.find("#email").val();
+    var phone = element.find("#phone").val();
+    var message = element.find("#message").val();
+
+    //create object to pass to serve methods
+    var subForm = {
+      name: name,
+      email: email,
+      phone: phone,
+      message: message,
+    };
+
+    // call meteor to send email from input
+    Meteor.call('sendEmail', subForm);
+    Router.go("/contact");
   },
-});
 
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  },
 });
