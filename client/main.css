@@ -31,9 +31,18 @@ video {
 #headertext{
   padding-top: 100px;
 }
+#contacttext{
+  padding-top: 500px;
+  text-align: center !important;
+}
 @media only screen and (max-width: 479px) and (min-width: 0px){
 .video-container {
     display:none !important;
+}
+
+#contacttext{
+  padding-top: 100px;
+  text-align: center !important;
 }
 
 .header-1 {

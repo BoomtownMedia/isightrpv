@@ -3,7 +3,7 @@ Template.main.events({
 
 // jquery contact form find data itmems
 
-    'submit #contactForm': function(event){
+    'submit #contact-form': function(event){
     event.preventDefault();
     var element = $(event.target);
     var name = element.find("#name").val();
