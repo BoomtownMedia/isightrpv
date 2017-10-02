@@ -28,6 +28,9 @@ video {
   font-weigth: bolder;
 }
 
+#headertext{
+  padding-top: 100px;
+}
 @media only screen and (max-width: 479px) and (min-width: 0px){
 .video-container {
     display:none !important;
