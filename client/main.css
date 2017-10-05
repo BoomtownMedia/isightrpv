@@ -25,9 +25,12 @@ video {
 .page-header .container h4{
   border-bottom: 1px solid #007fff;
   display: inline-block;
-  font-weigth: bolder;
+  padding-bottom: 10px;
+  font-weight: normal;
 }
-
+h2.title {
+  text-align: center;
+}
 #headertext{
   padding-top: 100px;
 }
@@ -54,7 +57,7 @@ video {
 
 .page-header .container{
   padding-top: 90px !important;
-  height: 400px !important;
+  height: 540px !important;
 }
 
 }
