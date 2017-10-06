@@ -35,7 +35,7 @@ h2.title {
   padding-top: 100px;
 }
 #contacttext{
-  padding-top: 500px;
+  padding-top: 400px;
   text-align: center !important;
 }
 @media only screen and (max-width: 479px) and (min-width: 0px){
@@ -48,6 +48,9 @@ h2.title {
   text-align: center !important;
 }
 
+a.navbar-brand.navbar-left {
+  display: none !important;
+}
 .header-1 {
   background-image: url('/images/frontpage.jpg');
 }
