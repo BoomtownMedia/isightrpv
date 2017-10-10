@@ -1,5 +1,14 @@
 /* CSS declarations go here */
+div.features-3 {
+  background-image: url('images/dronemapping.jpg') !important;
+  background-size: cover !important;
+  z-index: -1 !important;
+  padding-bottom: 0px ;
+}
 
+#white-filter{
+  background: rgba(255, 255, 255, 0.7) !important;
+}
 .video-container {
   position: absolute;
   top: 0%;
@@ -14,54 +23,63 @@ video {
   z-index: -1;
   opacity: .9 ;
   width: 100%;
+  background:transparent url('/images/frontpage.jpg') no-repeat 0 0;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+
 }
 /*.page-header .container {
-  padding-top: 20% !important;
+padding-top: 20% !important;
 }*/
 .page-header .container h3 {
   font-size: 50px !important;
   font-weight: bolder;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
 }
 .page-header .container h4{
   border-bottom: 1px solid #007fff;
   display: inline-block;
   padding-bottom: 10px;
   font-weight: normal;
+  text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+
 }
 h2.title {
   text-align: center;
 }
 #headertext{
-  padding-top: 100px;
+  padding-top: 10%;
 }
 #contacttext{
-  padding-top: 400px;
+  padding-top: 40%;
   text-align: center !important;
 }
 @media only screen and (max-width: 479px) and (min-width: 0px){
-.video-container {
+  .video-container {
     display:none !important;
-}
+  }
 
-#contacttext{
-  padding-top: 100px;
-  text-align: center !important;
-}
+  #contacttext{
+    padding-top: 100px;
+    text-align: center !important;
+  }
 
-a.navbar-brand.navbar-left {
-  display: none !important;
-}
-.header-1 {
-  background-image: url('/images/frontpage.jpg');
-}
-.page-header .container h3 {
-  font-size: 25px !important;
-}
+  a.navbar-brand.navbar-left {
+    display: none !important;
+  }
+  .header-1 {
+    background-image: url('/images/frontpage.jpg');
+  }
+  .page-header .container h3 {
+    font-size: 25px !important;
+  }
 
-.page-header .container{
-  padding-top: 90px !important;
-  height: 540px !important;
-}
+  .page-header .container{
+    padding-top: 90px !important;
+    height: 540px !important;
+  }
 
 }
 
@@ -69,5 +87,5 @@ a.navbar-brand.navbar-left {
   .page-header .container{
     padding-top: 40px !important;
   }
-  }
+}
 }
