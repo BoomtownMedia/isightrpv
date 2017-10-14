@@ -1,9 +1,26 @@
 /* CSS declarations go here */
+
+a.navbar-brand.navbar-left {
+  font-weight: 700;
+}
+
+div.outer {
+  border-radius: 25px;
+}
+div#container1 {
+  padding-left: 0px;
+  padding-right: 0px;
+  display: inline;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}
 div.features-3 {
   background-image: url('images/dronemapping.jpg') !important;
   background-size: cover !important;
   z-index: -1 !important;
   padding-bottom: 0px ;
+  border-radius: 25px 25px 0px 0px;
 }
 
 #white-filter{
@@ -28,6 +45,11 @@ video {
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
+  -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
 
 }
 /*.page-header .container {
@@ -44,23 +66,29 @@ padding-top: 20% !important;
   padding-bottom: 10px;
   font-weight: normal;
   text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-
+  text-align: center;
 }
 h2.title {
   text-align: center;
 }
 #headertext{
-  padding-top: 10%;
+  padding-top: 20%;
+  padding-left: 20px;
+  text-align: center;
 }
 #contacttext{
   padding-top: 40%;
   text-align: center !important;
 }
 @media only screen and (max-width: 479px) and (min-width: 0px){
-  .video-container {
+  video {
     display:none !important;
   }
 
+  #headertext{
+    padding-top: 50%;
+    padding-left: 20px;
+  }
   #contacttext{
     padding-top: 100px;
     text-align: center !important;
@@ -82,6 +110,35 @@ h2.title {
   }
 
 }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+  .video-container{
+    display:none !important;
+  }
+
+  #contacttext{
+    padding-top: 100px;
+    text-align: center !important;
+  }
+
+  a.navbar-brand.navbar-left {
+    display: none !important;
+  }
+  .header-1 {
+    background-image: url('/images/frontpage.jpg');
+    background-size:  cover;
+  }
+  .page-header .container h3 {
+    font-size: 25px !important;
+  }
+
+  .page-header .container{
+    padding-top: 90px !important;
+    height: 540px !important;
+  }
+
+}
+
 
 @media only screen and (min-width: 768px) {
   .page-header .container{
