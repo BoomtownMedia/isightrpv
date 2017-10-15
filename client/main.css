@@ -1,8 +1,19 @@
 /* CSS declarations go here */
-
+div.main.main-raised {
+  margin-top: 200px;
+}
+#videocontainer{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.wrapper {
+  z-index: 1;
+}
 a.navbar-brand.navbar-left {
   font-weight: 700;
 }
+
 
 div.outer {
   border-radius: 25px;
@@ -14,6 +25,7 @@ div#container1 {
   border-radius: 25px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
+  position: relative;
 }
 div.features-3 {
   background-image: url('images/dronemapping.jpg') !important;
@@ -25,6 +37,7 @@ div.features-3 {
 
 #white-filter{
   background: rgba(255, 255, 255, 0.7) !important;
+  width: fill;
 }
 .video-container {
   position: absolute;
