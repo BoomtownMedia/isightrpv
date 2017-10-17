@@ -125,7 +125,7 @@ Modules - reusable parts of our design
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #337ab7;
+  background-color: #337fb2;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;

@@ -1,148 +1,102 @@
 
 <template name="main">
 
-	<nav class="navbar navbar-info navbar-fixed-top" id="sectionsNav">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#home"><img src="/images/logo.png" style="width: 100px"></a>
-				<a class="navbar-brand navbar-left" href="#home">ISight | RPV Services</a>
-			</div>
+	<!--     *********     HEADER 1      *********      -->
 
-			<div class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-center">
-
-					<li class="dropdown" id="headerNavigationItems">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<i class="material-icons">view_day</i> Menu
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu dropdown-with-icons">
-							<li>
-								<a href="#home">
-									<i class="material-icons">dns</i>Home
-								</a>
-							</li>
-							<li>
-								<a href="#about">
-									<i class="material-icons">info</i> About
-								</a>
-							</li>
-							<li>
-								<a href="#metrics">
-									<i class="material-icons">list</i> Metrics
-								</a>
-							</li>
-							<li>
-								<a href="#services">
-									<i class="material-icons">build</i> Services
-								</a>
-							</li>
-							<li>
-								<a href="#team">
-									<i class="material-icons">people</i> Team
-								</a>
-							</li>
-
-							<li>
-								<a href="#testimonials">
-									<i class="material-icons">chat</i> Testimonials
-								</a>
-							</li>
-							<li>
-								<a href="#projects">
-									<i class="material-icons">assignment</i> Projects
-								</a>
-							</li>							<li>
-								<a href="#contact">
-									<i class="material-icons">call</i> Contact Us
-								</a>
-							</li>
-
-						</ul>
-
-					</li>
-
-
-				</ul>
-
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a href="https://twitter.com/isightrpv" target="_blank">
-							<i class="fa fa-twitter"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/isightrpv" target="_blank">
-							<i class="fa fa-facebook-square"></i>
-						</a>
-					</li>
-					<li>
-						<a href="https://www.youtube.com/channel/UCL7VnI_Ya5NEHnf16IUI1Gg" target="_blank">
-							<i class="fa fa-youtube"></i>
-						</a>
-					</li>
-				</ul>
-
-			</div>
-
-		</div>
-	</nav>
-
-	<div id="videocontainer">
-
-
-	<div class="page-header">
-		<div class="cd-section" id="home">
-			<div class="header-1">
-
-
+			<nav class="navbar navbar-transparent navbar-absolute">
 				<div class="container">
-					<div class="video-container" data-parallax='true'>
-						<video autoplay="autoplay" loop="loop" volume="0">
-							<source src="http://s3-us-west-1.amazonaws.com/isightrpv/isightrpv.mp4" type="video/mp4">
-							</video>
-							<div id="headertext">
-								<h4>Professional UAS Operations</h4>
-								<h3>Delivering a better perspective</h3>
-							</div>
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#home"><img src="/images/logo.png" style="width: 100px"></a>
+							<a class="navbar-brand navbar-left" href="#home">ISight | RPV Services</a>
 						</div>
-					</div>
+
+						<div class="collapse navbar-collapse" id="navigation-example">
+									<ul class="nav navbar-nav navbar-center">
+											<li>
+													<a href="#">
+															Home
+													</a>
+											</li>
+											<li>
+													<a href="#about">
+															About Us
+													</a>
+											</li>
+											<li>
+													<a href="#services">
+															Services
+													</a>
+											</li>
+											<li>
+													<a href="#projects">
+															Gallery
+													</a>
+											</li>
+											<li>
+													<a href="#contact">
+															Contact Us
+													</a>
+											</li>
+									</ul>
+							<ul class="nav navbar-nav navbar-right">
+									<li>
+											<a href="https://twitter.com/isightrpv">
+								<i class="fa fa-twitter"></i>
+							</a>
+									</li>
+									<li>
+											<a href="https://www.facebook.com/isightrpv">
+								<i class="fa fa-facebook-square"></i>
+							</a>
+									</li>
+						<li>
+											<a href="https://www.youtube.com/isightrpv">
+								<i class="fa fa-youtube"></i>
+							</a>
+									</li>
+							</ul>
+						</div>
 				</div>
+			</nav>
+
+
+			<div class="page-header header-filter" data-parallax="true" style="background-image: url('/images/frontpage1.jpg');">
+					<div class="container">
+							<div class="row">
+				<div class="col-md-6">
+					<h1 class="title">Professional UAV Operations</h1>
+										<h4>ISight RPV Services provides Remotely Piloted Vehicle operations to agricultural, critical infrastructure, wildlife management, insurance, and emergency services clients so they can unlock the value and efficiency of collecting data with unmanned aircraft.</h4>
+										<br />
+										<a href="#services" target="_blank" class="btn btn-info btn-lg">
+						 Learn More
+					</a>
+				</div>
+									<div class="col-md-5 col-md-offset-1">
+											<div class="iframe-container">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8yZcnX-8gjo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+										</div>
+									</div>
+							</div>
+					</div>
 			</div>
-		</div>
-		</div>
-		<br />
-		<div class="col-md-12">
-			<div class="button text-center">
-			<a href="#services" class="btn btn-info text-center">Learn more</a>
-			</div>
-		</div>
-		<div class="main main-raised">
+
 			<!-- <div class="wrapper"> -->
 
 			<!-- <div id="container1" class="container"> -->
 				<!--     *********    END HEADER 1      *********      -->
 				<div class="cd-section" id="about">
 					<!--     *********     FEATURES 2      *********      -->
-					<div class="features-3">
+					<div class="features-3" style="padding-left: 30px !important; padding-bottom: 30px !important">
 						<div class="row">
 							<div class="col-md-6">
-								<div class="phone-container">
-								</div>
-							</div>
-							<div id="white-filter" class="col-md-5" style="padding-bottom: 30px">
-
-								<br /><br />
-								<!-- Some <br /> tags to push the text to align with the image, you can remove it if you have more text on the right side :-) -->
-
-								<h2 class="title">Professional UAS Operations</h2>
 								<div class="info info-horizontal">
 									<div class="icon icon-info">
 										<i class="material-icons">account_circle</i>
@@ -175,27 +129,14 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-			<!--     *********     FEATURES 5      *********      -->
-			<div class="cd-section" id="metrics">
 
-				<div class="features-5"  style="background-image: url('/images/frontpage1.jpg')">
+					<div class="container" style="padding-top: 100px">
 
-
-					<div class="col-md-10 col-md-offset-1 text-center">
-						<h2 class="title">Metrics</h2>
-					</div>
-
-					<div class="container">
-						<div class="row">
-
-
+					<div class="row">
 							<div class="col-sm-2 col-sm-offset-1">
-								<div class="info">
+								<div class="info text-center">
 									<div class="icon">
-										<img class="metrics" src="/images/wind.png" height="80"/>
+										<img class="metrics" src="/images/wind.png" height="40"/>
 									</div>
 									<h4 class="info-title"><span class="numscroller" data-min='1' data-max="2100" data-delay="5" data-increment="5">2100</span> </h4>
 									<p>wind turbines inspected</p>
@@ -203,9 +144,9 @@
 							</div>
 
 							<div class="col-sm-2">
-								<div class="info">
+								<div class="info text-center">
 									<div class="icon">
-										<img class="metrics" src="/images/drone.png" height="80"/>
+										<img class="metrics" src="/images/drone.png" height="40"/>
 									</div>
 									<h4 class="info-title"><span class="numscroller" data-min='1' data-max="8200" data-delay="5" data-increment="10">8200</span> </h4>
 									<p>sorties flown</p>
@@ -213,9 +154,9 @@
 							</div>
 
 							<div class="col-sm-2">
-								<div class="info">
+								<div class="info text-center">
 									<div class="icon">
-										<img class="metrics" src="/images/pipe.png" height="80"/>
+										<img class="metrics" src="/images/pipe.png" height="40"/>
 									</div>
 									<h4 class="info-title"><span class="numscroller" data-min='1' data-max="150" data-delay="10" data-increment="5">150</span> </h4>
 									<p>miles of oil pipeline inspected</p>
@@ -223,9 +164,9 @@
 							</div>
 
 							<div class="col-sm-2">
-								<div class="info">
+								<div class="info text-center">
 									<div class="icon">
-										<img class="metrics" src="/images/farm1.png" height="80"/>
+										<img class="metrics" src="/images/farm1.png" height="40"/>
 									</div>
 									<h4 class="info-title"><span class="numscroller" data-min='1' data-max="40000" data-delay="5" data-increment="100">40,000</span> </h4>
 									<p>acres of precision agriculture flown</p>
@@ -234,9 +175,9 @@
 
 
 							<div class="col-sm-2">
-								<div class="info">
+								<div class="info text-center">
 									<div class="icon">
-										<img class="metrics" src="/images/map.png" height="80" />
+										<img class="metrics" src="/images/map.png" height="40" />
 									</div>
 									<h4 class="info-title"><span class="numscroller" data-min='1' data-max="17" data-delay="5" data-increment="1">17</span> </h4>
 									<p>states where flights have been flown</p>
@@ -244,11 +185,16 @@
 							</div>
 
 						</div>
+					</div>
 
 					</div>
-				</div>
 
-			</div>
+
+				</div>
+			<!--     *********     FEATURES 5      *********      -->
+
+
+
 			<!--     *********    END FEATURES 5      *********      -->
 
 
@@ -264,7 +210,7 @@
 						<div class="row">
 
 							<div class="col-md-12">
-								<h2 class="title">Services</h2>
+								<h2 class="title text-center">Services</h2>
 								<p>ISight RPV Services provides Remotely Piloted Vehicle operations to agricultural, critical infrastructure, wildlife management, insurance, and emergency services clients so they can unlock the value and efficiency of collecting data with unmanned aircraft.</p>
 								<br />
 								<div class="card card-plain card-blog">
@@ -515,52 +461,7 @@
 
 				</div>
 
-				<div class="cd-section" id="testimonials">
 
-					<!--     *********    TESTIMONIALS 1     *********      -->
-
-					<div class="testimonials-1 section-image" style="background-image: url('/images/background.jpg')">
-
-						<div class="container">
-							<div class="row">
-								<div class="col-md-6 col-md-offset-3 text-center">
-									<h2 class="title">Testimonials</h2>
-									<!-- <h5 class="description">Check what other persons are saying about our product. They are very happy with their purchase.</h5> -->
-								</div>
-							</div>
-
-							<div class="row">
-
-
-								<div class="col-md-4 col-md-offset-4">
-									<div class="card card-testimonial">
-										<div class="icon">
-											<i class="material-icons">format_quote</i>
-										</div>
-										<div class="card-content">
-											<h5 class="card-description">
-												"ISight has strong leadership, great equipment, and world class operators."
-											</h5>
-										</div>
-
-										<div class="footer">
-											<h4 class="card-title">Tom Kenville</h4>
-											<h6 class="category">UAI International</h6>
-											<div class="card-avatar">
-												<a href="#pablo">
-													<img class="img" src="/images/tom.jpg" />
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-
-						</div>
-					</div>
-				</div>
 
 				<div class="cd-section" id="projects">
 
@@ -568,13 +469,12 @@
 
 					<!--     *********    PROJECTS 3     *********      -->
 
-					<div class="testimonials section-image" id="projects-3">
+					<div class="testimonials" id="projects-3">
 
 						<div class="container">
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2 text-center">
-									<h6 class="category text-muted">Our work</h6>
-									<h2 class="title">Some of our projects</h2>
+									<h2 class="title">Portfolio</h2>
 								</div>
 
 								<!--         carousel  -->
@@ -605,67 +505,67 @@
 															<!-- Wrapper for slides -->
 															<div class="carousel-inner">
 																<div class="item active">
-																	<img src="/images/image1.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image1.JPG" alt="Awesome Image" height="200">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image2.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image2.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Somewhere Beyond, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image3.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image3.JPG" alt="Awesome Image" height="200">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image4.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image4.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image5.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image5.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image6.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image6.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image7.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image7.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image8.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image8.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image9.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image9.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image10.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image10.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
 																</div>
 																<div class="item">
-																	<img src="/images/image11.JPG" alt="Awesome Image">
+																	<img class="tales" src="/images/image11.JPG" alt="Awesome Image">
 																	<div class="carousel-caption">
 																		<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
 																	</div>
@@ -837,12 +737,6 @@
 						</a>
 					</li>
 					<li>
-						<a href="#metrics" data-number="3">
-							<span class="cd-dot"></span>
-							<span class="cd-label">Metrics</span>
-						</a>
-					</li>
-					<li>
 						<a href="#services" data-number="4">
 							<span class="cd-dot"></span>
 							<span class="cd-label">Services</span>
@@ -858,12 +752,6 @@
 						<a href="#projects" data-number="6">
 							<span class="cd-dot"></span>
 							<span class="cd-label">Projects</span>
-						</a>
-					</li>
-					<li>
-						<a href="#testimonials" data-number="7">
-							<span class="cd-dot"></span>
-							<span class="cd-label">Testimonials</span>
 						</a>
 					</li>
 					<li>
