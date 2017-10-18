@@ -1,7 +1,26 @@
+.navbar.navbar-info {
+  background-color: #ffffff !important;
+  color: #3C4858 !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px #eee !important;
+  padding-bottom: 0px !important;
+}
+.icon-primary{
+  color: #3C4858 !important;
+}
 div.features-3 {
-  background-image: url('images/background.jpg') !important;
+  background-image: url('images/dronemapping.jpg') !important;
   background-size: cover !important;
-  padding: 0px 0px 40px 40px !important ;
+  padding: 40px 0px 40px 40px !important ;
+  border-radius: 20px 20px 0px 0px;
+
+}
+#mission {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+}
+.btn-info{
+  background-color: #1572AB !important;
 }
 
 #white-filter{
@@ -12,4 +31,19 @@ div.features-3 {
 
 .carousel-inner > .item > img, .carousel-inner > .item > a >img {
   height: 300px;
+}
+
+.info{
+  padding: 10px !important;
+}
+.info p {
+  color: #3C4858 !important;
+}
+
+div.main.main-raised {
+  border-radius: 20px 20px 0px 0px;
+}
+
+p.timeline-Tweet-text {
+  color: #fff !important;
 }
