@@ -2545,7 +2545,7 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
   color: #fff;
 }
 .navbar.navbar-primary {
-  background-color: transparent;
+  background-color: #2196F3;
   color: #ffffff;
 /*   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(51, 122, 183, 0.52); */
 }

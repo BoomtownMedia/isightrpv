@@ -19,9 +19,3 @@ shell-server@0.2.4            # Server-side component of the `meteor shell` comm
 iron:router
 email
 okgrow:iron-router-autoscroll
-tsega:bootstrap3-datetimepicker
-jesperwe:bootstrap-select
-brwn:bootstrap-tagsinput
-jquery
-twbs:bootstrap@3.3.6
-jasny:bootstrap

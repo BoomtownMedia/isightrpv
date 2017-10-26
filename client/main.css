@@ -1,8 +1,18 @@
-.navbar.navbar-info {
+/*.navbar.navbar-info {
   background-color: #ffffff !important;
   color: #3C4858 !important;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px #eee !important;
   padding-bottom: 0px !important;
+}*/
+
+#white {
+  color: #ffffff !important;
+}
+.front{
+  max-height: 302px !important;
+}
+.back {
+  max-height: 302px !important;
 }
 .icon-primary{
   color: #3C4858 !important;

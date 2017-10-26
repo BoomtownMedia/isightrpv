@@ -25,3 +25,9 @@ Template.main.events({
   },
 
 });
+
+
+Meteor.startup(function() {
+  $("body").prognroll({
+});
+});

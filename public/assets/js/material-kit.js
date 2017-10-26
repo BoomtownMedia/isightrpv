@@ -1,4 +1,16 @@
-if (Meteor.isClient) {
+/*! =========================================================
+ *
+ * Material Kit PRO - V1.2.0
+ *
+ * =========================================================
+ *
+ * Product Page: https://www.creative-tim.com/product/material-kit-pro
+ * Available with purchase of license from http://www.creative-tim.com/product/material-kit-pro
+ * Copyright 2017 Creative Tim (https://www.creative-tim.com)
+ * License Creative Tim (https://www.creative-tim.com/license)
+ *
+ * ========================================================= */
+
 var big_image;
 
  $(document).ready(function(){
@@ -289,19 +301,17 @@ var big_image;
 
 
  materialKitDemo = {
+   checkScrollForParallax: debounce(function(){
 
-     checkScrollForParallax: debounce(function(){
-        if(isElementInViewport(big_image)){
-             var current_scroll = $(this).scrollTop();
-             oVal = ($(window).scrollTop() / 3);
-             big_image.css({
-                 'transform':'translate3d(0,' + oVal +'px,0)',
-                 '-webkit-transform':'translate3d(0,' + oVal +'px,0)',
-                 '-ms-transform':'translate3d(0,' + oVal +'px,0)',
-                 '-o-transform':'translate3d(0,' + oVal +'px,0)'
-             });
-        }
-     }, 4),
+           oVal = ($(window).scrollTop() / 3);
+           big_image.css({
+               'transform':'translate3d(0,' + oVal +'px,0)',
+               '-webkit-transform':'translate3d(0,' + oVal +'px,0)',
+               '-ms-transform':'translate3d(0,' + oVal +'px,0)',
+               '-o-transform':'translate3d(0,' + oVal +'px,0)'
+           });
+
+       }, 6),
 
      initContactUsMap: function(){
          var myLatlng = new google.maps.LatLng(44.433530, 26.093928);
@@ -423,4 +433,3 @@ var big_image;
  };
 
  var better_browser = '<div class="container"><div class="better-browser row"><div class="col-md-2"></div><div class="col-md-8"><h3>We are sorry but it looks like your Browser doesn\'t support our website Features. In order to get the full experience please download a new version of your favourite browser.</h3></div><div class="col-md-2"></div><br><div class="col-md-4"><a href="https://www.mozilla.org/ro/firefox/new/" class="btn btn-warning">Mozilla</a><br></div><div class="col-md-4"><a href="https://www.google.com/chrome/browser/desktop/index.html" class="btn ">Chrome</a><br></div><div class="col-md-4"><a href="http://windows.microsoft.com/en-us/internet-explorer/ie-11-worldwide-languages" class="btn">Internet Explorer</a><br></div><br><br><h4>Thank you!</h4></div></div>';
-}
