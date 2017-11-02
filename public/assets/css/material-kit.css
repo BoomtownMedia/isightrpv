@@ -3037,6 +3037,8 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: 2.6em;
+  color: #007096 !important;
+  text-align: center;
 }
 
 h3, .h3 {
@@ -3128,7 +3130,7 @@ h2.title {
   color: #999999;
 }
 
-.nav-tabs {
+/*.nav-tabs {
   background: #9c27b0;
   border: 0;
   border-radius: 3px;
@@ -3163,7 +3165,7 @@ h2.title {
   background-color: rgba(255, 255, 255, 0.2);
   transition: background-color .1s .2s;
 }
-
+*/
 .popover, .tooltip-inner {
   color: #555555;
   line-height: 1.5em;
@@ -3339,7 +3341,7 @@ h2.title {
   font-size: 1.3em;
   text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
 }
-.card .card-image .colored-shadow {
+/*.card .card-image .colored-shadow {
   transform: scale(0.94);
   top: 12px;
   filter: blur(12px);
@@ -3350,7 +3352,7 @@ h2.title {
   z-index: -1;
   transition: opacity .45s;
   opacity: 0;
-}
+}*/
 .card .card-image.no-shadow {
   box-shadow: none;
 }

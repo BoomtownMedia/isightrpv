@@ -1,0 +1,100 @@
+<template name="contact_us">
+{{>nav}}
+
+<div class="contactus-1 section-image" style="background-image: url('/images/isight_black_white.jpg')">
+
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5">
+								<h2 class="title">Contact Us</h2>
+								<h5 class="description">Learn how UAS can improve efficiency of collecting information and deliver new insights. We provide a better perspective</h5>
+								<div class="info info-horizontal">
+									<div class="icon icon-primary">
+										<i class="material-icons">pin_drop</i>
+									</div>
+									<div class="description">
+										<h4 class="info-title">Office</h4>
+										<p style="color: #9E9E9E">4200 James Ray Drive<br>
+											Grand Forks, ND  58202<br>
+										</p>
+									</div>
+								</div>
+								<div class="info info-horizontal">
+									<div class="icon icon-primary">
+										<i class="material-icons">phone</i>
+									</div>
+									<div class="description">
+										<h4 class="info-title">Call us</h4>
+										<p style="color: #9E9E9E">
+											1-763-706-7945
+										</p>
+									</div>
+								</div>
+								<div class="info info-horizontal">
+									<div class="icon icon-primary">
+										<i class="material-icons">email</i>
+									</div>
+									<div class="description">
+										<h4 class="info-title">Email us</h4>
+										<p>
+											<a href="mailto:info@isightrpv.com">info@isightrpv.com</a>
+										</p>
+									</div>
+								</div>
+
+							</div>
+							<div class="col-md-5 col-md-offset-2">
+								<div class="card card-contact">
+									<form role="form" id="contact-form" method="post">
+										<div class="header header-raised header-primary text-center">
+											<h4 class="card-title">Contact Us</h4>
+										</div>
+										<div class="card-content">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group label-floating">
+														<label class="control-label">Name</label>
+														<input id="name" type="text" name="name" class="form-control" required>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group label-floating">
+														<label class="control-label">Phone</label>
+														<input id="phone" type="text" name="phone" class="form-control" required>
+													</div>
+												</div>
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Email address</label>
+												<input id="email" type="email" name="email" class="form-control" required>
+											</div>
+											<div class="form-group label-floating">
+												<label class="control-label">Your message</label>
+												<textarea  name="message" class="form-control" id="message" rows="6" required></textarea>
+											</div>
+
+											<div class="row">
+												<div class="col-md-6">
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" name="optionsCheckboxes" required>
+															I'm not a robot
+														</label>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<button type="submit" class="btn btn-primary pull-right">Send Message</button>
+												</div>
+											</div>
+										</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				{{>footer}}
+      </template>

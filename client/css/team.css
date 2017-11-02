@@ -1,0 +1,28 @@
+.nav-pills > li > a {
+  border-radius: 0 !important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+  background-color: #fff !important;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  background-color: #fff !important;
+}
+
+p.card-description {
+  color: #54585a !important;
+}
+
+#span1 {
+  font-family: 'Roboto' !important;
+  font-size: 24px !important;
+  font-weight: 100 !important;
+  color: #007096 !important
+}
+
+h6.category.text-muted {
+  color: #54585a !important;
+  font-style: italic !important;
+  text-transform: none !important;
+}

@@ -1,0 +1,190 @@
+/*.navbar.navbar-info {
+  background-color: #ffffff !important;
+  color: #3C4858 !important;
+  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px #eee !important;
+  padding-bottom: 0px !important;
+}*/
+.video-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  z-index: -1;
+  opacity: .9 ;
+  width: 100%;
+  background:transparent url('/images/frontpage.jpg') no-repeat 0 0;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+
+}
+
+.page-header {
+  height: 100% !important;
+}
+.header-footer{
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(23,153,213,.5) !important;
+  z-index: 99999999;
+  width: 100% !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+.navbar .navbar-nav > li > a {
+  padding-top: 15px !important;
+}
+#homepage {
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  #homepage {
+    color: #3C4858 !important;
+  }
+
+  .carousel-caption {
+    bottom: 100px !important;
+  }
+}
+ul.nav.navbar-nav.navbar-center {
+}
+hr {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+@media (max-width: 991px) {
+  .carousel .page-header{
+    padding: 0 !important;
+  }
+
+  .carousel,.item,.active{
+  height:100% !important;
+  max-height: 600px !important; /*slider height*/
+}
+.carousel-inner{
+  height:100% !important;
+}
+
+.carousel .item img {
+    height: 100% !important;
+    max-width: 2000px !important;
+    top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+}
+body {
+  font-size: 16px !important;
+}
+h2 .h2{
+  color: #007096 !important;
+  text-align: center;
+}
+.navbar-header {
+}
+.navbar .navbar-nav > li > a {
+  font-weight: 700 !important;
+  font-size: 12px !important;
+  padding-top: 15px !important;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover{
+  box-shadow: none !important;
+  background-color: none !important;
+  color: #007096 !important;
+}
+.btn.btn-danger {
+  background-color: #2196F3 !important;
+  box-shadow: none !important;
+}
+
+.btn.btn-danger:hover, .btn.btn-danger:focus {
+  background-color: #ffffff !important;
+  color: #2196F3 !important;
+}
+
+.btn.btn-info {
+  background-color: #fff !important;
+  box-shadow: none !important;
+  color: #2196F3 !important;
+}
+
+.btn.btn-info:hover, .btn.btn-info:focus {
+  background-color: #2196F3 !important;
+  color: #fff !important;
+}
+
+p.card-description {
+  font-size: 16px !important;
+}
+#white {
+  color: #ffffff !important;
+}
+.front{
+  max-height: 302px !important;
+}
+.back {
+  max-height: 302px !important;
+}
+.icon-primary{
+  color: #3C4858 !important;
+}
+div.features-3 {
+  background-image: url('images/dronemapping.jpg') !important;
+  background-size: cover !important;
+  padding: 40px 0px 40px 40px !important ;
+  border-radius: 20px 20px 0px 0px;
+
+}
+#mission {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+}
+.btn-info{
+  background-color: #1572AB !important;
+}
+
+#white-filter{
+  background: rgba(255, 255, 255, 0.7) !important;
+  margin-right: 2px;
+  margin-left: 15px;
+}
+
+
+.info{
+  padding: 10px !important;
+}
+.info p {
+  color: #3C4858 !important;
+}
+
+div.main.main-raised {
+  border-radius: 20px 20px 0px 0px;
+}
+
+p.timeline-Tweet-text {
+  color: #fff !important;
+}
+
+h2 .h2{
+  color: #007096 !important;
+  text-align: center;
+}

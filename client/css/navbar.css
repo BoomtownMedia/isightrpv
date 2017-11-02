@@ -1,0 +1,22 @@
+.navbar.navbar-primary {
+  background-color: #fff !important;
+  border-bottom: 1px solid #E0E0DF;
+  margin-bottom: 0px !important;
+}
+
+a.navbar-brand.navbar-left {
+  color: #5A5B5C !important;
+}
+
+#brand {
+  color: #4596D2 !important;
+}
+.navbar .navbar-nav > li > a {
+  color: #5A5B5C !important;
+  padding-top: 15px !important;  
+}
+
+
+.navbar .navbar-nav > li >a:focus, .navbar .navbar-nav >li > a:hover {
+  color: #4596d2 !important;
+}

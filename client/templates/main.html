@@ -1,9 +1,8 @@
 
 <template name="main">
 
-	<!--     *********     HEADER 1      *********      -->
 
-	<nav class="navbar navbar-primary navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+	<nav class="navbar navbar-transparent navbar-absolute ">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -14,55 +13,45 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#home"><img src="/images/logo.png" style="width: 100px"></a>
-				<a class="navbar-brand navbar-left" href="#home">ISight | RPV</a>
+				<a class="navbar-brand navbar-left" href="#home"><span style="color: #ffffff; font-size: 18px !important; font-weight: bold !important">ISIGHT </span>| <span style="color: #ffffff">RPV Services</span></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navigation-example">
 				<ul class="nav navbar-nav navbar-center">
 					<li>
-						<a href="#">
-							Home
-						</a>
-					</li>
-					<li>
-						<a href="#about">
-							About Us
-						</a>
-					</li>
-					<li>
-						<a href="#services">
+						<a id="homepage" href="/services">
 							Services
 						</a>
 					</li>
 					<li>
-						<a href="#team">
+						<a id="homepage" href="/team">
 							Team
 						</a>
 					</li>
 					<li>
-						<a href="#projects">
+						<a id="homepage" href="/gallery">
 							Gallery
 						</a>
 					</li>
 					<li>
-						<a href="#contact">
+						<a id="homepage" href="/contactus">
 							Contact Us
 						</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li>
-						<a href="https://twitter.com/isightrpv">
+						<a id="homepage" href="https://twitter.com/isightrpv">
 							<i class="fa fa-twitter"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.facebook.com/isightrpv">
+						<a id="homepage" href="https://www.facebook.com/isightrpv">
 							<i class="fa fa-facebook-square"></i>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.youtube.com/isightrpv">
+						<a id="homepage" href="https://www.youtube.com/isightrpv">
 							<i class="fa fa-youtube"></i>
 						</a>
 					</li>
@@ -70,830 +59,149 @@
 			</div>
 		</div>
 	</nav>
+	<!-- Carousel
+	================================================== -->
 
-
-	<div class="page-header header-filter" data-parallax="true" style="background-image: url('/images/frontpage1.jpg');">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h2 class="title" style="font-weight: 100; font-family: 'Roboto';">Professional UAV Operations</h2>
-					<h4>SAFETY. INTEGRITY. EXCELLENCE.</h4>
-					<br />
-					<a href="#services" class="btn btn-danger btn-lg">
-						Learn More
+	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="50000">
+		<!-- Indicators -->
+		<div class="header-footer">
+			<div class="col-md-12">
+					<p class="pull-left" style="color: #fff; font-weight: bold; padding-top: 10px">Watch our promotional video</p>
+					<a href="https://www.youtube.com/watch?v=8yZcnX-8gjo" class="btn btn-info btn-sm pull-right" target="_blank">
+						Play Video
 					</a>
-				</div>
-				<div class="col-md-5 col-md-offset-1">
+			</div>
+		</div>
+		<!-- <ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+
+	</ol> -->
+	<div class="carousel-inner page-header" role="listbox">
+		<div class="item active">
+			<img class="first-slide header-filter" src="/images/main.jpg" alt="First slide">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 animated fadeIn" style="text-align: left">
+						<h1>Professional UAV Operations</h1>
+						<p>SAFETY. INTEGRITY. EXCELLENCE.</p>
+						<br />
+						<a href="/services" class="btn btn-danger btn-lg">
+							Learn More
+						</a>
+
+					</div>
+					<!-- <div class="col-md-5 col-md-offset-1">
+
 					<div class="iframe-container">
 
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/8yZcnX-8gjo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen controls="1"></iframe>
-					</div>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/8yZcnX-8gjo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen controls="1"></iframe>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</div>
-
-	<!-- <div class="wrapper"> -->
-	<div class="main main-raised" style="border-radius: 25px 25px 0 0 ">
-
-		<div class="cd-section" id="about">
-			<div class="features-3">
-				<div class="row">
-					<div class="col-md-6">
-
-					</div>
-					<div id="mission" class="col-md-4 col-md-offset-1">
-
-						<br /><br />
-						<!-- Some <br /> tags to push the text to align with the image, you can remove it if you have more text on the right side :-) -->
-
-						<h2 class="title">Mission</h2>
-
-						<div class="info info-horizontal">
-							<div class="icon icon-info">
-								<i class="material-icons">group</i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">Customer Satisfaction</h4>
-								<p>We put customer service at the core of our mission. We strive to understand our customers' true requirements and we make sure we meet or exceed them.</p>
-							</div>
-						</div>
-
-						<div class="info info-horizontal">
-							<div class="icon icon-info">
-								<i class="material-icons">grade</i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">Excellence</h4>
-								<p>We have built our team around ensuring that we deliver only the highest quality aerial data and conduct our operations with world class safety and professionalism.</p>
-							</div>
-						</div>
-
-						<div class="info info-horizontal">
-							<div class="icon icon-info">
-								<i class="material-icons">filter_hdr</i>
-							</div>
-							<div class="description">
-								<h4 class="info-title">A Better Perspective</h4>
-								<p>We have built a team of UAS professionals that are ready to help you implement UAS and unlock the incredible value of capturing aerial data. We are ready to show you A Better Perspective.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
-
+</div>
+<div class="item">
+	<img class="second-slide" src="/images/ag_1.jpg" alt="Second slide">
+	<div class="container">
+		<div class="carousel-caption animated fadeIn">
+			<h1>Precision Agriculture</h1>
+			<p id="description">UAS offer many benefits in the agriculture industry. Enhance your variable rate application program by collecting vegetation index data more frequently and less expensively. UAS can also benefit in determining soil moisture content and assessing crop damage after sever storms. ISight RPV Services has extensive experience delivering results in the agriculture industry.								</p>
+			<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn more</a></p>
 		</div>
+	</div>
+</div>
+<div class="item">
+	<img class="third-slide" src="/images/windfarm.jpg" alt="Third slide">
+	<div class="container">
+		<div class="carousel-caption animated fadeIn">
+			<h1>Infrastructure Inspection</h1>
+			<p id="description">
+				• Oil and Gas Pipelines and ROW • Bridges • Wind Turbines and Communications Towers • Railroads and ROW
+			</p>
+			<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn More</a></p>
+		</div>
+	</div>
+</div>
+<div class="item">
+	<img class="fourth-slide" src="/images/construction_site.jpg" alt="Third slide">
+	<div class="container">
+		<div class="carousel-caption animated fadeIn">
+			<h1>Construction Site Mapping</h1>
+			<p id="description">UAS provide a fast, efficient means for producing periodic maps of construction sites. Take advantage of the low cost to produce maps at more frequent intervals throughout the project. ISight RPV Services can deliver A Better Perspective before, during, and after your construction project.</p>
+			<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn More</a></p>
+		</div>
+	</div>
+</div>
+</div>
+<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+	<i class="material-icons">keyboard_arrow_left</i>
+</a>
+<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
 
-		<div id="metrics" style="background-color: #2196F3">
-			<div class="row">
-				<div class="col-sm-2 col-sm-offset-1">
-					<div class="info text-center">
-						<div class="icon">
-							<img class="metrics" src="/images/wind.png" height="40"/>
-						</div>
-						<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="2100" data-delay="5" data-increment="5">2100</span> </h4>
-						<p id="white">wind turbines inspected</p>
-					</div>
+	<i class="material-icons">keyboard_arrow_right</i>
+</a>
+
+</div><!-- /.carousel -->
+
+<div id="metrics" style="background-color: #2196F3">
+	<div class="row">
+		<div class="col-sm-2 col-sm-offset-1">
+			<div class="info text-center">
+				<div class="icon">
+					<img class="metrics" src="/images/wind.png" height="40"/>
 				</div>
-
-				<div class="col-sm-2">
-					<div class="info text-center">
-						<div class="icon">
-							<img class="metrics" src="/images/drone.png" height="40"/>
-						</div>
-						<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="8200" data-delay="5" data-increment="10">8200</span> </h4>
-						<p id="white">sorties flown</p>
-					</div>
-				</div>
-
-				<div class="col-sm-2">
-					<div class="info text-center">
-						<div class="icon">
-							<img class="metrics" src="/images/pipe.png" height="40"/>
-						</div>
-						<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="150" data-delay="10" data-increment="5">150</span> </h4>
-						<p id="white">miles of oil pipeline inspected</p>
-					</div>
-				</div>
-
-				<div class="col-sm-2">
-					<div class="info text-center">
-						<div class="icon">
-							<img class="metrics" src="/images/farm1.png" height="40"/>
-						</div>
-						<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="40000" data-delay="5" data-increment="100">40,000</span> </h4>
-						<p id="white">acres of precision agriculture flown</p>
-					</div>
-				</div>
-
-
-				<div class="col-sm-2">
-					<div class="info text-center">
-						<div class="icon">
-							<img class="metrics" src="/images/map.png" height="40" />
-						</div>
-						<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="17" data-delay="5" data-increment="1">17</span> </h4>
-						<p id="white">states where flights have been flown</p>
-					</div>
-				</div>
-
+				<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="2100" data-delay="5" data-increment="5">2100</span> </h4>
+				<p id="white">wind turbines inspected</p>
 			</div>
 		</div>
 
-		<!--     *********     FEATURES 5      *********      -->
-
-
-
-		<!--     *********    END FEATURES 5      *********      -->
-
-
-		<div class="cd-section" id="services">
-
-
-
-			<!--     *********     BLOGS 3      *********      -->
-
-			<div class="blogs-3">
-
-				<div class="container">
-					<div class="row">
-
-						<div class="col-md-12">
-							<h2 class="title text-center">Services</h2>
-							<p>ISight RPV Services provides Remotely Piloted Vehicle operations to agricultural, critical infrastructure, wildlife management, insurance, and emergency services clients so they can unlock the value and efficiency of collecting data with unmanned aircraft.</p>
-							<br />
-							<div class="row">
-
-								<div class="col-md-4">
-									<div class="card card-plain card-blog" style="height: 302px !important">
-										<div class="rotating-card-container" style="height: 302px !important; width: 302px; margin-bottom: 30px;">
-											<div class="card card-rotate card-background">
-												<div class="front" style="background-image: url('/images/farming.jpg'); background-repeat: no-repeat;  height: 302px !important">
-													<div class="card-content">
-													</div>
-												</div>
-
-												<div class="back" style="background-image: url('/images/ag1.jpg'); background-repeat:no-repeat; height: 302px !important">
-												</div>
-											</div>
-										</div>
-
-										<h6 class="category text-info">Ag</h6>
-										<h3 class="card-title">
-											Precision Agriculture
-										</h3>
-										<p class="card-description">
-
-											UAS offer many benefits in the agriculture industry. Enhance your variable rate application program by collecting vegetation index data more frequently and less expensively. UAS can also benefit in determining soil moisture content and assessing crop damage after sever storms. ISight RPV Services has extensive experience delivering results in the agriculture industry.								</p>
-										</div>
-									</div>
-
-									<div class="col-md-4">
-										<div class="card card-plain card-blog">
-											<div class="rotating-card-container" style="height: 302px !important; width: 302px; margin-bottom: 30px;">
-												<div class="card card-rotate card-background">
-													<div class="front" style="background-image: url('/images/windmill.jpg'); background-repeat: no-repeat;  height: 302px !important">
-														<div class="card-content">
-														</div>
-													</div>
-
-													<div class="back" style="background-image: url('/images/infrastructure1.jpg');background-repeat: no-repeat ;height: 302px !important">
-													</div>
-												</div>
-											</div>
-
-											<h6 class="category text-danger">
-												Infrastructure
-											</h6>
-											<h3 class="card-title">
-												Infrastructure Inspection
-											</h3>
-											<p class="card-description">
-												Inspections performed with UAS cost less and are far safer than inspections performed manually or with traditional manned aviation. Eliminate the risk of inspection-related injuries, and significantly reduce the cost of inspections at the same time. You don't need to invest extensive capital to purchase your own UAS in order to enjoy these benefits. ISight RPV Services has the right equipment and experts to take your inspections to the next level. Our inspection services apply to a wide range of high-risk areas and facilities, such as: • Oil and Gas Pipelines and ROW • Bridges • Wind Turbines and Communications Towers • Railroads and ROW
-											</p>
-										</div>
-									</div>
-
-									<div class="col-md-4">
-										<div class="card card-plain card-blog">
-											<div class="rotating-card-container" style="height: 302px; margin-bottom: 30px; width:302px">
-												<div class="card card-rotate card-background">
-													<div class="front" style="background-image: url('/images/construction.jpg');background-repeat: no-repeat; height: 302px !important">
-														<div class="card-content">
-														</div>
-													</div>
-
-													<div class="back" style="background-image: url('/images/construction1.jpg'); background-repeat: no-repeat; height: 302px !important">
-													</div>
-												</div>
-											</div>
-
-											<h6 class="category text-success">
-												Construction
-											</h6>
-											<h3 class="card-title">
-												<a href="#pablo">Construction Site Mapping</a>
-											</h3>
-											<p class="card-description">
-												UAS provide a fast, efficient means for producing periodic maps of construction sites. Take advantage of the low cost to produce maps at more frequent intervals throughout the project. ISight RPV Services can deliver A Better Perspective before, during, and after your construction project.
-											</p>
-										</div>
-									</div>
-
-								</div>
-
-							</div>
-						</div>
-
-					</div>
+		<div class="col-sm-2">
+			<div class="info text-center">
+				<div class="icon">
+					<img class="metrics" src="/images/drone.png" height="40"/>
 				</div>
-
-
-				<!--     *********    END BLOGS 4      *********      -->
-
-			</div>
-
-
-			<div class="cd-section" id="team">
-
-
-
-				<!--     *********    TEAM 5     *********      -->
-
-				<div class="team-5 section-image" style="background-image: url('/images/isight_black_white2.jpg')">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center">
-								<h2 class="title">Our team</h2>
-								<!-- <h5 class="description">This is the paragraph where you can write more details about your team. Keep you user engaged by providing meaningful information.</h5> -->
-							</div>
-						</div>
-
-						<div class="row">
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/tom.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Tom Kenville</h4>
-											<h6 class="category text-muted">CEO</h6>
-
-											<p class="card-description">
-												Tommy Kenville has over 25 years in aviation related experience, including 15 years at the University of North Dakota Aerospace Foundation and founding the Unmanned Applications Institute (the first Institute for research, testing and consulting in the emerging unmanned aerial vehicle industry) prior to merging with ISight.
-
-											</p>
-
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/adam.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Adam Lingwall</h4>
-											<h6 class="category text-muted">Co-Founder</h6>
-
-											<p class="card-description">
-												Adam has a background in product development in the energy and agriculture industries. With a degree in Aerospace Engineering and an MBA, Adam brings unique experience to the ISight management team.
-
-											</p>
-
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/nathan.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Nathan Leben</h4>
-											<h6 class="category text-muted">Co-Founder</h6>
-
-											<p class="card-description">
-												Nathan Leben, a University of North Dakota commercial aviation graduate, has been in the aviation industry for over 15 years with more than 8 years specifically pertaining to UAS. Nathan's exceptional UAS expertise is a core strength of the ISight management team.
-											</p>
-
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/doug.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Doug McDonald</h4>
-											<h6 class="category text-muted">Flight Operations Manager</h6>
-											<p class="card-description">
-												Doug McDonald has more than 30 years of applied research, planning and development experience focusing on strategic development, unmanned systems and technology. Doug has undergraduate and graduate degrees from the University of North Dakota. Doug’s experience includes assignments in unmanned systems, aerospace, remote sensing, value-added agriculture and information technology.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/adamo.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Adam Overvold</h4>
-											<h6 class="category text-muted">Chief Pilot</h6>
-
-											<p class="card-description">
-												Adam Overvold is a University of North Dakota commercial aviation and unmanned aerial systems graduate. He has pilot in command experience in several fixed wing and vtol UAS systems and maintains the highest level of professionalism in flight operations.
-											</p>
-
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/ryanm.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Ryan Moriearty</h4>
-											<h6 class="category text-muted">Chief Field Operations Specialist</h6>
-
-											<p class="card-description">
-												Ryan Moriearty is a University of North Dakota graduate with degrees in Unmanned Aircraft Systems Operations and Aviation Management. He has broad knowledge and experience with both manned and unmanned aircraft operations.
-											</p>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/scott.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Scott Tinker</h4>
-											<h6 class="category text-muted">Pilot/Operator</h6>
-
-											<p class="card-description">
-												Scott Tinker is a graduate of the University of North Dakota with a degree in Unmanned Aircraft Systems Operations. He has broad knowledge in manned and unmanned aircraft systems as well as curriculum development.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="col-md-6">
-								<div class="card card-profile card-plain">
-									<div class="col-md-5">
-										<div class="card-image">
-											<a href="#pablo">
-												<img class="img" src="/images/josh.jpg" />
-											</a>
-										</div>
-									</div>
-									<div class="col-md-7">
-										<div class="card-content">
-											<h4 class="card-title">Josh Ludwin</h4>
-											<h6 class="category text-muted">Pilot/Operator</h6>
-
-											<p class="card-description">
-											Josh Ludwin is a University of North Dakota graduate with a BS in Aeronautics majoring in Unmanned Aircraft Systems Operations. Josh is a certified flight instructor (CFI) and brings extensive experience in both manned and unmanned flight operations.
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
-
-				<!--     *********    END TEAM 5      *********      -->
-
-			</div>
-
-
-
-			<div class="cd-section" id="projects">
-
-
-
-				<!--     *********    PROJECTS 3     *********      -->
-
-				<div class="testimonials" id="projects-3">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 text-center">
-								<h2 class="title">Portfolio</h2>
-							</div>
-
-							<!--         carousel  -->
-							<div class="section" id="carousel">
-								<div class="container">
-									<div class="row">
-										<div class="col-md-8 col-md-offset-2">
-
-											<!-- Carousel Card -->
-											<div class="card card-raised card-carousel">
-												<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-													<div class="carousel slide" data-ride="carousel">
-
-														<!-- Indicators -->
-														<ol class="carousel-indicators">
-															<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="5"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="6"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="7"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="8"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="9"></li>
-															<li data-target="#carousel-example-generic" data-slide-to="10"></li>
-														</ol>
-
-														<!-- Wrapper for slides -->
-														<div class="carousel-inner">
-															<div class="item active">
-																<img class="tales" src="/images/image1.JPG" alt="Awesome Image" height="200">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image2.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Somewhere Beyond, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image3.JPG" alt="Awesome Image" height="200">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image4.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image5.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image6.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image7.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image8.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image9.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image10.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-															<div class="item">
-																<img class="tales" src="/images/image11.JPG" alt="Awesome Image">
-																<div class="carousel-caption">
-																	<!-- <h4><i class="material-icons">location_on</i> Yellowstone National Park, United States</h4> -->
-																</div>
-															</div>
-														</div>
-
-														<!-- Controls -->
-														<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-															<i class="material-icons">keyboard_arrow_left</i>
-														</a>
-														<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-															<i class="material-icons">keyboard_arrow_right</i>
-														</a>
-													</div>
-												</div>
-											</div>
-											<!-- End Carousel Card -->
-
-										</div>
-									</div>
-								</div>
-
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!--         end carousel -->
-				<!--     *********    END PROJECTS 3      *********      -->
-
-
-			</div>
-
-			<div class="cd-section" id="contact">
-
-				<!--     *********    CONTACT US 1     *********      -->
-
-				<div class="contactus-1 section-image" style="background-image: url('/images/isight_black_white.jpg')">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-md-5">
-								<h2 class="title">Contact Us</h2>
-								<h5 class="description">Learn how UAS can improve efficiency of collecting information and deliver new insights. We provide a better perspective</h5>
-								<div class="info info-horizontal">
-									<div class="icon icon-primary">
-										<i class="material-icons">pin_drop</i>
-									</div>
-									<div class="description">
-										<h4 class="info-title">Office</h4>
-										<p>4200 James Ray Drive<br>
-											Grand Forks, ND  58202<br>
-										</p>
-									</div>
-								</div>
-								<div class="info info-horizontal">
-									<div class="icon icon-primary">
-										<i class="material-icons">phone</i>
-									</div>
-									<div class="description">
-										<h4 class="info-title">Call us</h4>
-										<p>
-											1-763-706-7945
-										</p>
-									</div>
-								</div>
-								<div class="info info-horizontal">
-									<div class="icon icon-primary">
-										<i class="material-icons">email</i>
-									</div>
-									<div class="description">
-										<h4 class="info-title">Email us</h4>
-										<p>
-											<a href="mailto:info@isightrpv.com">info@isightrpv.com</a>
-										</p>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-md-5 col-md-offset-2">
-								<div class="card card-contact">
-									<form role="form" id="contact-form" method="post">
-										<div class="header header-raised header-primary text-center">
-											<h4 class="card-title">Contact Us</h4>
-										</div>
-										<div class="card-content">
-											<div class="row">
-												<div class="col-md-6">
-													<div class="form-group label-floating">
-														<label class="control-label">Name</label>
-														<input id="name" type="text" name="name" class="form-control" required>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<div class="form-group label-floating">
-														<label class="control-label">Phone</label>
-														<input id="phone" type="text" name="phone" class="form-control" required>
-													</div>
-												</div>
-											</div>
-											<div class="form-group label-floating">
-												<label class="control-label">Email address</label>
-												<input id="email" type="email" name="email" class="form-control" required>
-											</div>
-											<div class="form-group label-floating">
-												<label class="control-label">Your message</label>
-												<textarea  name="message" class="form-control" id="message" rows="6" required></textarea>
-											</div>
-
-											<div class="row">
-												<div class="col-md-6">
-													<div class="checkbox">
-														<label>
-															<input type="checkbox" name="optionsCheckboxes" required>
-															I'm not a robot
-														</label>
-													</div>
-												</div>
-												<div class="col-md-6">
-													<button type="submit" class="btn btn-primary pull-right">Send Message</button>
-												</div>
-											</div>
-										</div>
-
-									</form>
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-				<footer class="footer footer-black footer-big">
-					<div class="container">
-
-						<div class="content">
-							<div class="row">
-								<div class="col-md-4">
-									<h5>About Us</h5>
-									<p>ISight RPV Services provides Remotely Piloted Vehicle operations to agricultural, critical infrastructure, wildlife management, insurance, and emergency services clients so they can unlock the value and efficiency of collecting data with unmanned aircraft.</p>
-								</div>
-
-								<div class="col-md-4">
-									<h5>Social Feed</h5>
-									<div class="social-feed">
-										<div class="feed-line">
-											<i class="fa fa-facebook-square"></i>
-											<p>Tune in to KFYR at 1035am this morning to hear ISight's Tom K Kenville talk with Scott Hennon during the Bakken 2.0 North Dakota Petroleum Council.</p>
-										</div>
-										<div class="feed-line">
-											<i class="fa fa-facebook-square"></i>
-											<p>http://www.wahpetondailynews.com/…/article_935e5342-941e-11… Tom K Kenville Adam D Lingwall Nathaniel Leben.</p>
-										</div>
-										<div class="feed-line">
-											<i class="fa fa-facebook-square"></i>
-											<p>ISight chalks up another state today. We have 4 aircrew converging on California to inspect critical infrastructure in Northern and Southern California. Have drone, will travel. Adam Overvold, Scott Tinker, Nathaniel Leben, Michael Link.</p>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-md-4">
-									<h5>Twitter Feed</h5>
-									<div class="gallery-feed">
-										<img src="/images/twitter1.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter2.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter3.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter4.jpg" class="img img-raised img-rounded" alt="" />
-
-										<img src="/images/twitter5.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter6.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter7.jpg" class="img img-raised img-rounded" alt="" />
-										<img src="/images/twitter8.jpg" class="img img-raised img-rounded" alt="" />
-									</div>
-
-								</div>
-							</div>
-						</div>
-
-
-						<hr />
-
-						<ul class="pull-left">
-							<li>
-								<a href="#pablo">
-									Home
-								</a>
-							</li>
-							<li>
-								<a href="#about">
-									Mission
-								</a>
-							</li>
-							<li>
-								<a href="#services">
-									Services
-								</a>
-							</li>
-							<li>
-								<a href="#team">
-									Team
-								</a>
-							</li>
-
-							<li>
-								<a href="#projects">
-									Gallery
-								</a>
-							</li>
-							<li>
-								<a href="#contact">
-									Contact Us
-								</a>
-							</li>
-						</ul>
-
-						<div class="copyright pull-right">
-							Copyright &copy;2017 ISight | RPV All Rights Reserved.
-						</div>
-					</div>
-				</footer>
-
-				<!--     *********    END CONTACT US 1      *********      -->
+				<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="8200" data-delay="5" data-increment="10">8200</span> </h4>
+				<p id="white">sorties flown</p>
 			</div>
 		</div>
-		<nav id="cd-vertical-nav">
-			<ul>
-				<li>
-					<a href="#home" data-number="1">
-						<span class="cd-dot"></span>
-						<span class="cd-label">Home</span>
-					</a>
-				</li>
-				<li>
-					<a href="#about" data-number="2">
-						<span class="cd-dot"></span>
-						<span class="cd-label">About</span>
-					</a>
-				</li>
-				<li>
-					<a href="#services" data-number="4">
-						<span class="cd-dot"></span>
-						<span class="cd-label">Services</span>
-					</a>
-				</li>
-				<li>
-					<a href="#team" data-number="5">
-						<span class="cd-dot"></span>
-						<span class="cd-label">Team</span>
-					</a>
-				</li>
-				<li>
-					<a href="#projects" data-number="6">
-						<span class="cd-dot"></span>
-						<span class="cd-label">Projects</span>
-					</a>
-				</li>
-				<li>
-					<a href="#contact" data-number="8">
-						<span class="cd-dot"></span>
-						<span class="cd-label">Contact Us</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-	</template>
+
+		<div class="col-sm-2">
+			<div class="info text-center">
+				<div class="icon">
+					<img class="metrics" src="/images/pipe.png" height="40"/>
+				</div>
+				<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="150" data-delay="10" data-increment="5">150</span> </h4>
+				<p id="white">miles of oil pipeline inspected</p>
+			</div>
+		</div>
+
+		<div class="col-sm-2">
+			<div class="info text-center">
+				<div class="icon">
+					<img class="metrics" src="/images/farm1.png" height="40"/>
+				</div>
+				<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="40000" data-delay="5" data-increment="100">40,000</span> </h4>
+				<p id="white">acres of precision agriculture flown</p>
+			</div>
+		</div>
+
+
+		<div class="col-sm-2">
+			<div class="info text-center">
+				<div class="icon">
+					<img class="metrics" src="/images/state.png" height="40" />
+				</div>
+				<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="17" data-delay="5" data-increment="1">17</span> </h4>
+				<p id="white">states where flights have been flown</p>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+{{>footer}}
+
+</template>

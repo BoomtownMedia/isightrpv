@@ -1,0 +1,48 @@
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+.container_image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.wrapper1 {
+  height: 100%;
+  width: 100%;
+}
+
+wrapper2{
+  height: auto;
+  width: auto;
+}
+.services {
+    height: 100%;
+    background: url("/images/dronemapping.jpg");
+    -webkit-background-size:;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portfolio Overlay Block */
+#service-overlay {
+    margin-top: 200px;
+    background: rgb(0, 0, 0); /* fallback color*/
+    background: rgba(0, 112, 150, 0.75);
+    max-width:100%;
+}
+#service-overlay.h1{
+  font-size: 35px;
+}
+
+#text {
+  padding: 40px !important
+}
+
+#text p{
+  font-size: 20px !important;
+}
