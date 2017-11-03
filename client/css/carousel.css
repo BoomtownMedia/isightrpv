@@ -15,6 +15,10 @@
   right: 50% !important;
   left: 60px !important;
 }
+
+.carousel-caption p {
+  font-size: 16px !important;
+}
 .carousel-inner > .item {
     position: relative;
     display: none;

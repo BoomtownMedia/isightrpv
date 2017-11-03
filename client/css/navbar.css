@@ -13,10 +13,13 @@ a.navbar-brand.navbar-left {
 }
 .navbar .navbar-nav > li > a {
   color: #5A5B5C !important;
-  padding-top: 15px !important;  
+  padding-top: 15px !important;
 }
 
 
 .navbar .navbar-nav > li >a:focus, .navbar .navbar-nav >li > a:hover {
   color: #4596d2 !important;
+}
+
+@media (max-width: 768px) {
 }
