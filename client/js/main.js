@@ -29,8 +29,6 @@ Template.contact_us.events({
 });
 
 
-Meteor.startup(function() {
-new WOW().init();
 
 Template.gallery.onRendered(function(){
 
@@ -45,6 +43,8 @@ this.$('.grid').isotope({
     }
   });
 });
+Meteor.startup(function() {
+new WOW().init();
 
 //isotope events
 Template.gallery.events ({
