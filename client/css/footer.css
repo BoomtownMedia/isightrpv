@@ -4,5 +4,5 @@ h6 {
 
 footer {
   background-color: #ffffff !important;
-  position: relative !important;
+  position: static !important;
 }

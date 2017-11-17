@@ -31,18 +31,23 @@ Template.contact_us.events({
 
 
 Template.gallery.onRendered(function(){
-
-
 var self=this
 self.selection =
-this.$('.grid').isotope({
+  this.$('.grid').isotope({
     //options....
     itemSelector: '.grid-item',
+    filter: "*",
     masonry: {
       columnWidth: 300
     }
   });
+
+  self.selection.imagesLoaded(function () {
+    self.selection.isotope('layout');
+  });
+
 });
+
 Meteor.startup(function() {
 new WOW().init();
 
