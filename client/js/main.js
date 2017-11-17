@@ -1,3 +1,5 @@
+import { ReactiveVar } from 'meteor/reactive-var';
+
 Template.contact_us.events({
 
 
@@ -29,4 +31,67 @@ Template.contact_us.events({
 
 Meteor.startup(function() {
 new WOW().init();
+
+Template.gallery.onRendered(function(){
+
+
+var self=this
+self.selection =
+this.$('.grid').isotope({
+    //options....
+    itemSelector: '.grid-item',
+    masonry: {
+      columnWidth: 300
+    }
+  });
+});
+
+//isotope events
+Template.gallery.events ({
+  'click button.filter-ag': function() {
+
+    Template.instance().selection.isotope({filter:'.ag'});
+  },
+
+  'click button.filter-construction': function() {
+
+    Template.instance().selection.isotope({filter:'.construction'});
+  },
+
+  'click button.filter-infrastucture': function() {
+
+    Template.instance().selection.isotope({filter:'.infrastructure'});
+  },
+
+  'click button.filter-all': function() {
+
+    Template.instance().selection.isotope({filter:'*'});
+  }
+});
+});
+
+//facebook feed
+Template.footer.onCreated(function () {
+this.feed = new ReactiveVar();
+
+var link = "https://graph.facebook.com/v2.11/isightrpv?fields=posts.limit(3)"
+var arguments = {
+  headers: {"User-Agent": "Meteor/1.1"},
+  params: {
+    "access_token": "956271767862418|2XmW6Fr58RZKChHtB8m20AhOSJ8",
+  }
+};
+Meteor.http.call('GET',link,arguments,function(error,response){
+  console.log(response.data.posts.data[0].message);
+  this.feed.set(response.data);
+}.bind(this));
+});
+
+Template.footer.helpers({
+  feed1: function() {
+    return Template.instance().feed.get().posts.data[0].message;
+  },
+  feed2: function() {
+    return Template.instance().feed.get().posts.data[1].message;
+  }
 });

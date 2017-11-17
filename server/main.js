@@ -31,3 +31,21 @@ if(Meteor.isServer) {
     }
   });
 };
+
+
+// Meteor.methods({
+// //facebook feed
+// FacebookFeed: function() {
+// var link = "https://graph.facebook.com/v2.11/isightrpv?fields=posts.limit(3)"
+// var arguments = {
+//   headers: {"User-Agent": "Meteor/1.1"},
+//   params: {
+//     "access_token": "956271767862418|2XmW6Fr58RZKChHtB8m20AhOSJ8",
+//   }
+// };
+// HTTP.call('GET',link,arguments,function(error,response){
+//   var feed1 = response.data.posts.data[0].message;
+//   return feed1;
+// });
+// }
+// });
