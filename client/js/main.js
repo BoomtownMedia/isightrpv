@@ -63,9 +63,9 @@ Template.gallery.events ({
     Template.instance().selection.isotope({filter:'.construction'});
   },
 
-  'click button.filter-infrastucture': function() {
+  'click button.filter-infra': function() {
 
-    Template.instance().selection.isotope({filter:'.infrastructure'});
+    Template.instance().selection.isotope({filter:'.infra'});
   },
 
   'click button.filter-all': function() {
