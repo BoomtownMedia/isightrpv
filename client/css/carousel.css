@@ -39,7 +39,7 @@
   left: 0;
   min-width: 100%;
   height: auto !important;
-  filter: blur(2px);
+  filter: blur(1px);
 }
 
 
