@@ -32,10 +32,14 @@ h1, .h1 {
     color: #3C4858 !important;
   }
 
+
+}
+
+@media (max-width: 666px) {
+
   .carousel-caption {
     bottom: 100px !important;
   }
-
 }
 ul.nav.navbar-nav.navbar-center {
 }
