@@ -22,4 +22,8 @@ a.navbar-brand.navbar-left {
 }
 
 @media (max-width: 768px) {
+  a.navbar-brand.navbar-left {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
 }

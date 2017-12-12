@@ -1,5 +1,6 @@
 import { ReactiveVar } from 'meteor/reactive-var';
 
+
 Template.contact_us.events({
 
 
@@ -51,6 +52,13 @@ self.selection =
 Meteor.startup(function() {
 new WOW().init();
 
+
+Template.nav.events({
+
+'click .nav a': function(e) {
+  $('.navbar-toggle').click();
+ }
+});
 //isotope events
 Template.gallery.events ({
   'click button.filter-ag': function() {
