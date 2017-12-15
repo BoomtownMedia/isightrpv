@@ -55,10 +55,18 @@ new WOW().init();
 
 Template.nav.events({
 
-'click .nav a': function(e) {
+'click .nav a': function() {
   $('.navbar-toggle').click();
  }
 });
+
+Template.main.events({
+  'click .nav a': function() {
+    $('.navbar-toggle').click();
+  }
+});
+
+
 //isotope events
 Template.gallery.events ({
   'click button.filter-ag': function() {

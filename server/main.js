@@ -25,6 +25,7 @@ if(Meteor.isServer) {
       message:subForm.message,
       text: "name: " + subForm.name + '\n' +
             "phone: " + subForm.phone + '\n' +
+            "email: " + subForm.email + '\n' +
             subForm.message,
 
     });

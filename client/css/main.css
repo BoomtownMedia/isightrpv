@@ -8,7 +8,7 @@ h1, .h1 {
   font-weight: 100 !important;
 }
 .page-header {
-  height: 100% !important;
+  /*height: 100% !important;*/
 }
 .header-footer{
   position: absolute;
