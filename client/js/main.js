@@ -116,3 +116,7 @@ Template.footer.helpers({
     return Template.instance().feed.get().posts.data[1].message;
   }
 });
+
+setInterval(function() {
+    HTTP.get("http://isightrpv.herokuapp.com");
+}, 300000);
