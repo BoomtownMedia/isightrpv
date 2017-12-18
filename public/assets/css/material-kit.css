@@ -33,7 +33,7 @@ body.inverse .card .form-control {
   color: initial;
 }
 .nav-open-absolute body {
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 blockquote p {

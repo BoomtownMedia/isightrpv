@@ -60,7 +60,6 @@ mongo-id@1.0.6
 mrt:lightbox2@0.0.1
 npm-mongo@2.2.30
 observe-sequence@1.0.16
-okgrow:iron-router-autoscroll@0.0.11
 okgrow:router-autoscroll@0.1.8
 ordered-dict@1.0.9
 promise@0.9.0
