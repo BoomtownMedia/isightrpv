@@ -6270,7 +6270,7 @@ footer .pull-center {
   max-width: 300px;
 }
 .footer-big .gallery-feed img {
-  width: 20%;
+  /* width: 20%; */
   margin-right: 5%;
   margin-bottom: 5%;
   float: left;
