@@ -3294,7 +3294,7 @@ h2.title {
   box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 .carousel .carousel-caption {
-  padding-bottom: 45px;
+  padding-bottom: 60px;
 }
 .carousel .carousel-caption .material-icons {
   position: relative;
@@ -6274,6 +6274,7 @@ footer .pull-center {
   margin-right: 5%;
   margin-bottom: 5%;
   float: left;
+  height: 50px;
 }
 
 .footer-white {

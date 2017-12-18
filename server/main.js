@@ -18,7 +18,7 @@ if(Meteor.isServer) {
     //let other method calls from the same client start running
 
     Email.send({
-      to: "info@isightrpv.com",
+      to: "adam.falck@gmail.com",
       name: subForm.name,
       from: subForm.email,
       subject:subForm.name + " has contacted you",

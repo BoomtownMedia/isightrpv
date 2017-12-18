@@ -103,7 +103,6 @@ var arguments = {
   }
 };
 Meteor.http.call('GET',link,arguments,function(error,response){
-  console.log(response.data.posts.data[0].message);
   this.feed.set(response.data);
 }.bind(this));
 });
@@ -117,6 +116,6 @@ Template.footer.helpers({
   }
 });
 
-setInterval(function() {
+Meteor.setInterval(function() {
     HTTP.get("http://isightrpv.herokuapp.com");
 }, 300000);
