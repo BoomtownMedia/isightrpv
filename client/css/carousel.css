@@ -6,7 +6,7 @@
   height: 100%;
 }
 .carousel .carousel-caption {
-    padding-bottom: 120px !important;
+    padding-bottom: 120px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
