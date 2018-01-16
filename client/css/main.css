@@ -18,10 +18,40 @@ h1, .h1 {
   width: 100% !important;
   padding-top: 10px;
   padding-bottom: 10px;
+  font-size: 1.25rem;
 
 }
+
+@media (max-width: 391px) {
+  #span2 {
+    display: none;
+  }
+  #span3 {
+    display: none;
+  }
+
+
+}
+.underline {
+   color: rgba(255,255,255,.5); 
+}
+.underline:hover {
+  text-decoration: underline;
+  color: white !important;
+}
+.cookiebar{
+  position: fixed;
+  top: 0;
+  background-color: #1799D5 !important;
+  z-index: 99999999999;
+  width: 100% !important;
+  font-size: 1.25rem;
+}
+.navbar {
+  top: 30px;
+}
 .navbar .navbar-nav > li > a {
-  padding-top: 15px !important;
+  paddin-top: 15px !important;
 }
 #homepage {
   color: #fff !important;
