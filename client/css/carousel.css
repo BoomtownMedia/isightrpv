@@ -6,7 +6,7 @@
   height: 100%;
 }
 .carousel .carousel-caption {
-    padding-bottom: 120px !important;
+    /* padding-bottom: 60px !important; */
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -14,10 +14,12 @@
   text-align: left !important;
   right: 50% !important;
   left: 60px !important;
+  bottom: 5%;
 }
 
 .carousel-caption p {
   font-size: 16px !important;
+  font-weight: bolder !important;
 }
 .carousel-inner > .item {
     position: relative;
