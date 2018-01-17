@@ -14,7 +14,7 @@ h1, .h1 {
   position: absolute;
   bottom: 0px;
   background-color: rgba(23,153,213,.5) !important;
-  z-index: 99999999;
+  z-index: 99;
   width: 100% !important;
   padding-top: 10px;
   padding-bottom: 10px;

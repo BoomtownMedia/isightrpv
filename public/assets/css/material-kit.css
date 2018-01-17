@@ -8229,7 +8229,7 @@ select.selectpicker {
     width: 230px;
     right: 0;
     margin-right: 0 !important;
-    z-index: 1032;
+    z-index: 99999999999999999999999;
     visibility: visible;
     background-color: #999;
     overflow-y: visible;
@@ -8237,6 +8237,7 @@ select.selectpicker {
     text-align: left;
     padding-right: 0;
     padding-left: 0;
+    padding-top: 24px !important;
     max-height: none !important;
     -webkit-transform: translate3d(230px, 0, 0);
     -moz-transform: translate3d(230px, 0, 0);
