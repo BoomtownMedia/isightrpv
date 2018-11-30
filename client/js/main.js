@@ -54,9 +54,9 @@ Meteor.startup(function () {
 
 
   // Show the example modal 3 seconds after startup.
-  setTimeout(function () {
-    Modal.show('modal1')
-  }, 3000)
+  // setTimeout(function () {
+  //   Modal.show('modal1')
+  // }, 3000)
 
   Template.nav.events({
 
@@ -130,3 +130,5 @@ Meteor.setInterval(function () {
 
 
 //modal
+
+//megamenu

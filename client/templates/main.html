@@ -1,6 +1,6 @@
 <template name="main">
 	{{>cookiebar}}
-	<nav class="navbar navbar-transparent navbar-absolute ">
+	<nav class="navbar navbar-transparent navbar-absolute yamm">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
@@ -15,12 +15,39 @@
 					</span><span id="span2">| </span><span id="span3" style="color: #ffffff">RPV Services</span></a>
 			</div>
 
-			<div class="collapse navbar-collapse" id="navigation-example">
+			<div class="collapse navbar-collapse" id="navigation-example navbar-collapse-grid">
 				<ul class="nav navbar-nav navbar-center">
-					<li>
-						<a id="homepage" href="/services">
+					<li class="dropdown yamm-fw">
+						<a id="homepage" data-toggle="dropdown" data-vertical-behavior="accordion" class="dropdown-toggle subMenu" href="/services">
 							Services
+							<b class="caret"></b>
 						</a>
+						<ul class="dropdown-menu">
+							<li class="container" style="padding-bottom: 60px">
+								<div class="yamm-content full col-md-12">
+									<div class="row">
+										<div class="col-md-3 br">
+											<h4>Construction Site Mapping</h4>
+											<img src="/images/construction.jpg" width="150" height="150" alt="construction">
+										</div>
+										<div class="col-md-3 br">
+											<h4>Precision Agriculture</h4>
+											<img src="/images/ag1.jpg" width="150" height="150" alt="ag">
+										</div>
+										<div class="col-md-3 br" style="border-right-style: solid; border-right-width: 1px; border-right-color: rgba(255,255,255,.5)">
+											<h4>Infrastructure Inspection</h4>
+											<img src="/images/infrastructure1.jpg" width="150" height="150" alt="infrastructure">
+										</div>
+										<div class="col-md-3 br">
+											<h4>Online UAV Training</h4>
+											<img src="/images/uai.png" height="50" alt="infrastructure">
+											<p style="padding: 50px"><a class="btn btn-lg btn-danger" href="/services" role="button">Learn more</a></p>
+										</div>
+
+									</div>
+								</div>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a id="homepage" href="/team">
@@ -100,51 +127,7 @@
 				</div> -->
 				</div>
 			</div>
-			<div class="item">
-				<img class="second-slide" src="/images/ag_1.jpg" alt="Second slide">
-				<div class="container">
-					<div class="carousel-caption animated fadeIn">
-						<h1>Precision Agriculture</h1>
-						<p id="description">UAS offer many benefits in the agriculture industry. Enhance your variable rate application program
-							by collecting vegetation index data more frequently and less expensively. UAS can also benefit in determining soil
-							moisture content and assessing crop damage after sever storms. ISight RPV Services has extensive experience delivering
-							results in the agriculture industry. </p>
-						<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn more</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="third-slide" src="/images/windfarm.jpg" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption animated fadeIn">
-						<h1>Infrastructure Inspection</h1>
-						<p id="description">
-							• Oil and Gas Pipelines and ROW • Bridges • Wind Turbines and Communications Towers • Railroads and ROW
-						</p>
-						<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn More</a></p>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<img class="fourth-slide" src="/images/construction_site.jpg" alt="Third slide">
-				<div class="container">
-					<div class="carousel-caption animated fadeIn">
-						<h1>Construction Site Mapping</h1>
-						<p id="description">UAS provide a fast, efficient means for producing periodic maps of construction sites. Take advantage
-							of the low cost to produce maps at more frequent intervals throughout the project. ISight RPV Services can deliver
-							A Better Perspective before, during, and after your construction project.</p>
-						<p><a class="btn btn-lg btn-danger" href="/services" role="button">Learn More</a></p>
-					</div>
-				</div>
-			</div>
 		</div>
-		<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-			<i class="material-icons">keyboard_arrow_left</i>
-		</a>
-		<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-
-			<i class="material-icons">keyboard_arrow_right</i>
-		</a>
 	</div><!-- /.carousel -->
 
 	<div id="metrics" style="background-color: #2196F3">
@@ -154,7 +137,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/wind.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="5000" data-delay="5" data-increment="5">5000</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="5000" data-delay="5"
+						 data-increment="5">5000</span>
 					</h4>
 					<p id="white">wind turbines inspected</p>
 				</div>
@@ -165,7 +149,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/drone.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="8200" data-delay="5" data-increment="10">8200</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="8200" data-delay="5"
+						 data-increment="10">8200</span>
 					</h4>
 					<p id="white">sorties flown</p>
 				</div>
@@ -176,7 +161,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/pipe.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="175" data-delay="10" data-increment="5">175</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="175" data-delay="10"
+						 data-increment="5">175</span>
 					</h4>
 					<p id="white">miles of oil pipeline inspected</p>
 				</div>
@@ -187,7 +173,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/farm1.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="80000" data-delay="5" data-increment="100">80,000</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="80000" data-delay="5"
+						 data-increment="100">80,000</span>
 					</h4>
 					<p id="white">acres of precision agriculture flown</p>
 				</div>
@@ -199,7 +186,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/state.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="20" data-delay="5" data-increment="1">20</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="20" data-delay="5"
+						 data-increment="1">20</span>
 					</h4>
 					<p id="white">states where flights have been flown</p>
 				</div>
@@ -209,7 +197,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/power_line.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="40" data-delay="5" data-increment="1">40</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="40" data-delay="5"
+						 data-increment="1">40</span>
 					</h4>
 					<p id="white">miles of powerline flown</p>
 				</div>
@@ -220,7 +209,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/plane.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="500" data-delay="5" data-increment="3">500</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="500" data-delay="5"
+						 data-increment="3">500</span>
 					</h4>
 					<p id="white">hours of chase support for UAS activities</p>
 				</div>
@@ -231,7 +221,8 @@
 					<div class="icon">
 						<img class="metrics" src="/images/pilot.png" height="40" />
 					</div>
-					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="12" data-delay="5" data-increment="1">12</span>
+					<h4 class="info-title"><span id="white" class="numscroller" data-min='1' data-max="12" data-delay="5"
+						 data-increment="1">12</span>
 					</h4>
 					<p id="white">commercially, licensed, 107 certified pilots</p>
 				</div>
@@ -241,5 +232,5 @@
 	</div>
 
 
-	{{>footer}} {{>modal1}}
+	{{>footer}}
 </template>

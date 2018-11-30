@@ -13,7 +13,6 @@ Router.route('/team', function(){
 Router.route('services', function() {
   this.render('services');
 });
-
 Router.route('contactus', function() {
   this.render('contact_us');
 });

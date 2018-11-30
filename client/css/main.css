@@ -6,6 +6,11 @@
 }*/
 h1, .h1 {
   font-weight: 100 !important;
+  color: #007096 !important;
+  font-size: 48px !important;
+  font-size: 3rem !important;
+  letter-spacing: .05rem !important;
+  line-height: 1.25 !important;  
 }
 .page-header {
   /*height: 100% !important;*/
@@ -103,7 +108,10 @@ hr {
 }
 }
 body {
+  color: #54585a !important;
   font-size: 16px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
 }
 h2 .h2{
   color: #007096 !important;
@@ -122,13 +130,18 @@ h2 .h2{
   color: #007096 !important;
 }
 .btn.btn-danger {
+  background-color: transparent !important;
+  border: 1px solid white;
+  box-shadow: none !important;
+}
+.btn.btn-danger-white {
   background-color: #2196F3 !important;
   box-shadow: none !important;
 }
-
 .btn.btn-danger:hover, .btn.btn-danger:focus {
   background-color: #ffffff !important;
   color: #2196F3 !important;
+  border: none !important;
 }
 
 .btn.btn-info {

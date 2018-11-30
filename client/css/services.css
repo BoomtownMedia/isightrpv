@@ -6,6 +6,9 @@
     transform: translate(-50%, -50%);
     font-size: 30px;
 }
+.grey {
+  background-color: #f3f3f4;
+}
 .container_image {
     position: relative;
     text-align: center;
@@ -45,4 +48,8 @@ wrapper2{
 
 #text p{
   font-size: 20px !important;
+}
+
+#ag {
+  padding-top: 50px;
 }
