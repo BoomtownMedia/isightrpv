@@ -1,0 +1,104 @@
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+/* .grey {
+  background-color: #f3f3f4;
+} */
+.container_image {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.wrapper1 {
+  height: 100%;
+  width: 100%;
+}
+
+wrapper2{
+  height: auto;
+  width: auto;
+}
+.services {
+    height: 100%;
+    background: url("/images/dronemapping.jpg");
+    -webkit-background-size:;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portfolio Overlay Block */
+#service-overlay {
+    margin-top: 200px;
+    background: rgb(0, 0, 0); /* fallback color*/
+    background: rgba(0, 112, 150, 0.75);
+    max-width:100%;
+}
+#service-overlay.h1{
+  font-size: 35px;
+}
+
+#text {
+  padding: 40px !important
+}
+
+#text p{
+  font-size: 20px !important;
+}
+
+#ag {
+  padding-top: 50px;
+}
+#vid-holder {
+  position: relative !important;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#workflow #vid-holder video {
+  max-width: 100%;
+  background-color: white;
+}
+video{
+height:600px; 
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+}
+video[poster] {
+  object-fit: cover;
+}
+
+.span6 {
+ width: 50% !important;
+ float: left !important;
+}
+
+.blueBox:after {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,112,150,.75);
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.bkgd--lgrey {
+  background-color: #f3f3f4 !important;
+}

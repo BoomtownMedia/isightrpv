@@ -1,22 +1,52 @@
-Router.route('/', function() {
-  this.render('main');
+import { FlowRouter } from 'meteor/ostrio:flow-router-extra';
+
+
+FlowRouter.route('/', {
+  name: 'home',
+  action() {
+    this.render('main');
+  }
 });
 
-Router.route('/contact', function(){
-  this.render('contact');
+FlowRouter.route('/team', {
+  name: 'team',
+  action() {
+    this.render('team');
+  }
 });
 
-Router.route('/team', function(){
-  this.render('team');
+FlowRouter.route('/gallery', {
+  name: 'gallery',
+  action() {
+    this.render('gallery');
+  }
 });
 
-Router.route('services', function() {
-  this.render('services');
-});
-Router.route('contactus', function() {
-  this.render('contact_us');
+
+FlowRouter.route('/contactus', {
+  name: 'contact_us',
+  action() {
+    this.render('contact_us');
+  }
 });
 
-Router.route('gallery', function() {
-  this.render('gallery');
+FlowRouter.route('/services/ag', {
+  name: 'ag',
+  action() {
+    this.render('ag');
+  }
+});
+
+FlowRouter.route('/services/construction', {
+  name: 'construction',
+  action() {
+    this.render('construction');
+  }
+});
+
+FlowRouter.route('/services/infrastructure', {
+  name: 'infrastructure',
+  action() {
+    this.render('infrastructure');
+  }
 });

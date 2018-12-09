@@ -51,13 +51,7 @@ Template.gallery.onRendered(function () {
 
 Meteor.startup(function () {
   new WOW().init();
-
-
-  // Show the example modal 3 seconds after startup.
-  // setTimeout(function () {
-  //   Modal.show('modal1')
-  // }, 3000)
-
+  
   Template.nav.events({
 
     'click .nav a': function () {
@@ -130,5 +124,7 @@ Meteor.setInterval(function () {
 
 
 //modal
+$(document).ready(function(){
+  $(".dropdown-toggle").dropdown();
 
-//megamenu
+}); 

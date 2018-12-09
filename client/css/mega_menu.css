@@ -1,80 +1,64 @@
-/*!
- * Yamm!
- * Yet another megamenu for Bootstrap
- * http://geedmo.github.com/yamm
- *
- * https://github.com/geedmo
- */
- .yamm .nav,
- .yamm .dropup,
- .yamm .dropdown,
- .yamm .collapse {
-   position: static;
- }
- .yamm .navbar-inner,
- .yamm .container {
-   position: relative;
- }
- .yamm .dropdown-menu {
-   left: auto;
- }
- .yamm .dropdown-menu > li {
-   display: block;
- }
- .yamm .nav.pull-right .dropdown-menu {
-   right: 0;
- }
- .yamm .yamm-content {
-   padding: 20px 30px;
-   *zoom: 1;
- }
- .yamm .yamm-content:before,
- .yamm .yamm-content:after {
-   display: table;
-   content: "";
-   line-height: 0;
- }
- .yamm .yamm-content:after {
-   clear: both;
- }
- .yamm.navbar .nav > li > .dropdown-menu:after,
- .yamm.navbar .nav > li > .dropdown-menu:before {
-   display: none;
- }
- .yamm .dropdown.yamm-fullwidth .dropdown-menu {
-   width: 100%;
-   left: 0;
-   right: 0;
- }
- @media (max-width: 969px) {
-   .yamm .dropdown.yamm-fullwidth .dropdown-menu {
-     width: auto;
-   }
-   .yamm .yamm-content {
-     padding-left: 0;
-     padding-right: 0;
-   }
-   .yamm .dropdown-menu > li > ul {
-     display: block;
-   }
- }
-
- .yamm .container {
-    position: static;
+ .mega-dropdown {
+  position: static !important;
+  
+}
+.dropdown .dropdown-menu,
+ .dropup:not(.bootstrap-select) .dropdown-menu{
+  max-height: 0px;
+  -webkit-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -moz-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -ms-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -o-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
 }
 
-.yamm .container .dropdown-menu {
+.dropdown.open .dropdown-menu {
+  -webkit-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -moz-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -ms-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  -o-transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+  transition: max-height 1.0s, opacity 0.2s, visibility 0s;
+
+  max-height: 900px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.mega-dropdown-menu {
+    padding: 20px 0px;
+    width: 100%;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+.mega-dropdown-menu > li > ul > li {
+  /* list-style: none; */
+}
+.mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  /* color: #222; */
+  padding: 3px 5px;
+}
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  /* text-decoration: none; */
+}
+.container .dropdown-menu {
     left: 0;
     text-align: center;
     width: 100%;
     background: linear-gradient(to bottom, #1799d5, #0a4976);
-    margin-top: -95px !important;
+    margin-top: -115px !important;
     z-index: -1;
-    padding-top: 100px;
-
 }
-
-.yamm .dropdown-menu > li {
-    display: inline-block;   
+.padding-div {
+  padding-top: 100px;
 }
 

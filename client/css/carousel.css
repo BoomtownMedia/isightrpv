@@ -5,16 +5,13 @@
 .carousel {
   height: 100%;
 }
-.carousel .carousel-caption {
-    /* padding-bottom: 60px !important; */
-}
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
   text-align: left !important;
   right: 50% !important;
   left: 60px !important;
-  bottom: 5%;
+  bottom: 150px !important;
 }
 
 .carousel-caption p {

@@ -6,11 +6,14 @@
 }*/
 h1, .h1 {
   font-weight: 100 !important;
-  color: #007096 !important;
+  color: white !important;
   font-size: 48px !important;
-  font-size: 3rem !important;
+  font-size: 5rem !important;
   letter-spacing: .05rem !important;
   line-height: 1.25 !important;  
+}
+.caret {
+  color: #1799d5 !important;
 }
 .page-header {
   /*height: 100% !important;*/
@@ -25,6 +28,12 @@ h1, .h1 {
   padding-bottom: 10px;
   font-size: 1.25rem;
 
+}
+a#menu-item:hover > h4{
+  border-bottom: 1px solid #fff;
+  content: "";
+  background-color: none !important;
+  display: inline-block;
 }
 
 @media (max-width: 391px) {
@@ -109,8 +118,8 @@ hr {
 }
 body {
   color: #54585a !important;
-  font-size: 16px !important;
-  font-size: 1rem !important;
+  /* font-size: 16px !important; */
+  font-size: 1.5rem !important;
   line-height: 1.5 !important;
 }
 h2 .h2{
@@ -133,6 +142,16 @@ h2 .h2{
   background-color: transparent !important;
   border: 1px solid white;
   box-shadow: none !important;
+}
+.btn.btn-white {
+  background: #fff !important;
+  /* border: 1px #fff solid; */
+  color: #1799d5 !important;
+}
+.btn.btn-white:hover, .btn.btn-white:focus {
+  background: #1799d5 !important;
+  color: #fff !important;
+  border: 1px #1799d5 solid !important;
 }
 .btn.btn-danger-white {
   background-color: #2196F3 !important;
@@ -210,4 +229,13 @@ p.timeline-Tweet-text {
 h2 .h2{
   color: #007096 !important;
   text-align: center;
+}
+
+#metrics {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#info-piece {
+  background-color: #f3f3f4;
 }
