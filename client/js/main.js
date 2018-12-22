@@ -128,3 +128,12 @@ $(document).ready(function(){
   $(".dropdown-toggle").dropdown();
 
 }); 
+
+//link to bootstrap tabs
+$('.tab-link').on('click', function(event) {
+  // Prevent url change
+  event.preventDefault();
+  
+  // `this` is the clicked <a> tag
+  $('[data-toggle="tab"][href="' + this.hash + '"]').trigger('click');
+})
