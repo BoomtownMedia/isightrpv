@@ -51,7 +51,7 @@ Template.gallery.onRendered(function () {
 
 Meteor.startup(function () {
   new WOW().init();
-  
+
   Template.nav.events({
 
     'click .nav a': function () {
@@ -124,16 +124,40 @@ Meteor.setInterval(function () {
 
 
 //modal
-$(document).ready(function(){
+$(document).ready(function () {
   $(".dropdown-toggle").dropdown();
 
-}); 
+});
 
 //link to bootstrap tabs
-$('.tab-link').on('click', function(event) {
-  // Prevent url change
-  event.preventDefault();
-  
-  // `this` is the clicked <a> tag
-  $('[data-toggle="tab"][href="' + this.hash + '"]').trigger('click');
-})
+$(document).ready(function() { 
+
+  // cache the id
+  var navbox = $('.nav-tabs');
+
+  // activate tab on click
+  navbox.on('click', 'a', function (e) {
+    var $this = $(this);
+    // prevent the Default behavior
+    e.preventDefault();
+    // send the hash to the address bar
+    window.location.hash = $this.attr('href');
+    // activate the clicked tab
+    $this.tab('show');
+  });
+
+  // will show tab based on hash
+  function refreshHash() {
+    navbox.find('a[href="'+window.location.hash+'"]').tab('show');
+  }
+
+  // show tab if hash changes in address bar
+  $(window).bind('hashchange', refreshHash);
+
+  // read has from address bar and show it
+  if(window.location.hash) {
+    // show tab on load
+    refreshHash();
+  }
+
+});
