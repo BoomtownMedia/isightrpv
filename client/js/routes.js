@@ -30,9 +30,23 @@ FlowRouter.route('/contactus', {
   }
 });
 
-FlowRouter.route('/services', {
-  name: 'services',
+FlowRouter.route('/services/agriculture', {
+  name: 'agriculture',
   action() {
-    this.render('services');
+    this.render('agriculture');
+  }
+});
+
+FlowRouter.route('/services/construction', {
+  name: 'construction',
+  action() {
+    this.render('construction');
+  }
+});
+
+FlowRouter.route('/services/infrastructure', {
+  name: 'infrastructure',
+  action() {
+    this.render('infrastructure');
   }
 });

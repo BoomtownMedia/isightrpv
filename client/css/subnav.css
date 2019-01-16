@@ -1,0 +1,16 @@
+.subnav {
+    margin:0;
+   top: 0px;
+   z-index: 1020;
+   background-color: rgb(247,247,247); 
+   padding: 8px 0px 0px 0px;
+ }
+.navbar-inner {
+  border-bottom: 1px solid #E0E0DF;
+} 
+ .subnav.affix {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index:10;
+ }

@@ -106,13 +106,13 @@ video[poster] {
   background-color: #f3f3f4 !important;
 }
 
-.table-cell {
+/* .table-cell {
   display: table-cell;
   float: none;
   position: relative;
   vertical-align: middle;
   padding-left: 40px !important;
-}
+} */
 .bgimage2 {
   width:100%;
   background: url('/images/header2.jpg');
@@ -142,26 +142,53 @@ video[poster] {
   top: 0;
   z-index: 1;
 }
+.bkgd--gradient--top{
 
-.figure {
-  position: absolute;
-  z-index: -1;
-  width: 110px;
-  height: 110px;
-  top: -25px;
-  left: 50%;
-  margin-left: -57px;
+
+background: #ffffff url(images/gradient-top2.png) repeat-x center top;
 }
-/* 
+#stewardship {
+  height: 600px
+}
+.span5 {
+  width: 41.66% !important;
+  float: left !important;
+}
 .figure {
-  display: block;
-  margin: 0;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center
+}
+.span7 {
+  width: 58.33% !important;
+  float: left !important;
+}
+.table {
+  height: 100%;
+  display: table !important;
+  margin-bottom: 0px !important;
+}
+.table-cell {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+@media screen and (min-width: 601px) {
+.pad80l {
+    padding-left: 80px !important;
+    /* padding-left: 5rem !important; */
+}
+}
 
-} */
+@media screen and (min-width: 601px){
 
+.padEdgeR {
+    padding-right: calc(((100vw - 1210px) / 2) + 32px) !important;
+    /* padding-right: calc(((100vw - 1210px) / 2) + 2rem) !important; */
+}
+}
 .nav-link {
   background-color: transparent !important;
   border: none !important;
@@ -180,15 +207,28 @@ a.tab {
   color: white !important;
 }
 
-.table-cell-top {
-  vertical-align: top;
+
+@media screen and (max-width:670px) {
+	.no-mobile, .slides-pagination, .vert--33, .vert--66 {
+		display:none !important;
+  }
+
 }
 
-.mbr-table-cell {
-  display: table-cell;
-  float: none;
-  padding-bottom: 0;
-  padding-top: 0;
-  position: relative;
-  vertical-align: middle;
+@media screen and (max-width: 600px) {
+#stewardship {
+    text-align: center !important;
+    height: auto !important;
+    padding: 10px;
+}
+
+.span7 {
+  width: 100% !important
+}
+}
+
+@media (max-width: 768px) {
+  .mobile-only {
+  display: inline !important;
+  }
 }

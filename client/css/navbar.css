@@ -2,7 +2,7 @@
   background-color: #fff !important;
   border-bottom: 1px solid #E0E0DF;
   margin-bottom: 0px !important;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(51, 122, 183, 0.52) !important;
+  /* box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(51, 122, 183, 0.52) !important; */
   z-index: 9999999 !important;
 }
 

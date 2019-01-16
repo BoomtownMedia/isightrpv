@@ -128,7 +128,18 @@ $(document).ready(function () {
   $(".dropdown-toggle").dropdown();
 
 });
-
+//change material icon on click 
+Template.subnav.events({
+'click i': function(event) {
+  var icon = $('.all');
+  icon.toggleClass('up');
+  if ( icon.hasClass('up') ) {
+    icon.text('apps');
+  } else {
+    icon.text('close');
+  }
+}
+});
 //link to bootstrap tabs
 $(document).ready(function() { 
 
