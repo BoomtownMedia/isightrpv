@@ -208,14 +208,14 @@ a.tab {
 }
 
 
-@media screen and (max-width:670px) {
+@media screen and (max-width:768px) {
 	.no-mobile, .slides-pagination, .vert--33, .vert--66 {
 		display:none !important;
   }
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 #stewardship {
     text-align: center !important;
     height: auto !important;
@@ -230,5 +230,8 @@ a.tab {
 @media (max-width: 768px) {
   .mobile-only {
   display: inline !important;
+  }
+  .figure {
+    text-align: inherit !important
   }
 }
