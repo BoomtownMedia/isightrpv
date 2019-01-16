@@ -3037,7 +3037,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: 2.6em;
   color: #007096 !important;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h3, .h3 {

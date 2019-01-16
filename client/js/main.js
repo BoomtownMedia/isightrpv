@@ -54,15 +54,15 @@ Meteor.startup(function () {
 
   Template.nav.events({
 
-    'click .nav a': function () {
-      $('.navbar-toggle').click();
-    }
-  });
+  //   'click .nav a': function () {
+  //     $('.navbar-toggle').click();
+  //   }
+  // });
 
-  Template.main.events({
-    'click .nav a': function () {
-      $('.navbar-toggle').click();
-    },
+  // Template.main.events({
+  //   'click .nav a': function () {
+  //     $('.navbar-toggle').click();
+  //   },
 
 
 
