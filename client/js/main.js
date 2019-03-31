@@ -1,6 +1,35 @@
 import { ReactiveVar } from 'meteor/reactive-var';
 
+  Template.nav.events({
+    'click #homepage': function () {
+      $('.navbar-toggle').click() //bootstrap 3.x  
+    },
+    'click #menu-item': function () {
+      $('.navbar-toggle').click() //bootstrap 3.x  
+    },
+  //   'click .nav a': function () {
+  //     $('.navbar-toggle').click();
+  //   }
+  // });
 
+  // Template.main.events({
+  //   'click .nav a': function () {
+  //     $('.navbar-toggle').click();
+  //   },
+
+
+
+
+  });
+  
+  Template.main.events({
+    'click #homepage': function () {
+      $('.navbar-toggle').click() //bootstrap 3.x  
+    },
+    'click #menu-item': function () {
+      $('.navbar-toggle').click() //bootstrap 3.x  
+    },
+  });
 Template.contact_us.events({
 
 
@@ -52,22 +81,7 @@ Template.gallery.onRendered(function () {
 Meteor.startup(function () {
   new WOW().init();
 
-  Template.nav.events({
 
-  //   'click .nav a': function () {
-  //     $('.navbar-toggle').click();
-  //   }
-  // });
-
-  // Template.main.events({
-  //   'click .nav a': function () {
-  //     $('.navbar-toggle').click();
-  //   },
-
-
-
-
-  });
 
   //isotope events
   Template.gallery.events({
@@ -172,3 +186,4 @@ $(document).ready(function() {
   }
 
 });
+
