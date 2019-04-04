@@ -32,8 +32,14 @@ if(Meteor.isServer) {
     }
   });
 };
-
-
+WebApp.connectHandlers
+  .use('/redir/', function(req, res, next) {
+    // 301 Moved Permanently
+    res.writeHead(301, {
+      'Location': 'https://www.isightrpv..com' + req.originalUrl
+    });
+    res.end();
+  });
 // Meteor.methods({
 // //facebook feed
 // FacebookFeed: function() {
