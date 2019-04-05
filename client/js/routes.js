@@ -50,19 +50,3 @@ FlowRouter.route('/services/infrastructure', {
     this.render('infrastructure');
   }
 });
-FlowRouter.route('https://isightrpv.com', {
-  triggersEnter: [function(context, redirect) {
-    redirect('https://www.isightrpv.com');
-  }],
-  action: function(_params) {
-    throw new Error("this should not get called");
-  }
-});
-FlowRouter.route('http://isightrpv.com', {
-  triggersEnter: [function(context, redirect) {
-    redirect('http://www.isightrpv.com');
-  }],
-  action: function(_params) {
-    throw new Error("this should not get called");
-  }
-});

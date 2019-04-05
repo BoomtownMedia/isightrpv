@@ -1,27 +1,27 @@
 import { Meteor } from 'meteor/meteor';
 Meteor.startup(() => {
 
-//301 redirect isightrpv.com to www.isightrpv.com
-WebApp.connectHandlers.use(function(req, res, next) {
+// //301 redirect isightrpv.com to www.isightrpv.com
+// WebApp.connectHandlers.use(function(req, res, next) {
 
-  // Check if request is for non-www address
-  if (req.headers && req.headers.host.slice(0, 4) !== 'www.') {
+//   // Check if request is for non-www address
+//   if (req.headers && req.headers.host.slice(0, 4) !== 'www.') {
 
-    // Add www. from host
-    var newHost = 'www.' + req.headers.host
+//     // Add www. from host
+//     var newHost = 'www.' + req.headers.host
 
-    // Redirect to www. version URL
-    res.writeHead(301, {
-      // Hard-coded protocol because req.protocol not available
-      Location: 'https://' + newHost + req.originalUrl
-    });
-    res.end();
+//     // Redirect to www. version URL
+//     res.writeHead(301, {
+//       // Hard-coded protocol because req.protocol not available
+//       Location: 'https://' + newHost + req.originalUrl
+//     });
+//     res.end();
 
-  } else {
-    // Continue with the application stack
-    next();
-  }
-});
+//   } else {
+//     // Continue with the application stack
+//     next();
+//   }
+// });
 
   // code to run on server at startup
   smtp = {

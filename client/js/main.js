@@ -81,6 +81,9 @@ Template.gallery.onRendered(function () {
 Meteor.startup(function () {
   new WOW().init();
 
+    if (location.host.indexOf('www.isightrpv.com') !== 0) {
+        location = 'www.isightrpv.com';
+    };
 
 
   //isotope events
