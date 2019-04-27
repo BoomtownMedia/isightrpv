@@ -84,6 +84,11 @@ a#menu-item:hover > h4{
   .carousel-caption {
     bottom: 100px !important;
   }
+
+  .page-header .container {
+    padding-top: 30% !important;
+  }
+
 }
 ul.nav.navbar-nav.navbar-center {
 }
