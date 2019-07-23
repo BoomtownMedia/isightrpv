@@ -2,10 +2,10 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
   Template.nav.events({
     'click #homepage': function () {
-      $('.navbar-toggle').click() //bootstrap 3.x  
+      $('.navbar-toggle').click() //bootstrap 3.x
     },
     'click #menu-item': function () {
-      $('.navbar-toggle').click() //bootstrap 3.x  
+      $('.navbar-toggle').click() //bootstrap 3.x
     },
   //   'click .nav a': function () {
   //     $('.navbar-toggle').click();
@@ -21,13 +21,13 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 
   });
-  
+
   Template.main.events({
     'click #homepage': function () {
-      $('.navbar-toggle').click() //bootstrap 3.x  
+      $('.navbar-toggle').click() //bootstrap 3.x
     },
     'click #menu-item': function () {
-      $('.navbar-toggle').click() //bootstrap 3.x  
+      $('.navbar-toggle').click() //bootstrap 3.x
     },
   });
 Template.contact_us.events({
@@ -141,7 +141,7 @@ $(document).ready(function () {
   $(".dropdown-toggle").dropdown();
 
 });
-//change material icon on click 
+//change material icon on click
 Template.subnav.events({
 'click i': function(event) {
   var icon = $('.all');
@@ -154,7 +154,7 @@ Template.subnav.events({
 }
 });
 //link to bootstrap tabs
-$(document).ready(function() { 
+$(document).ready(function() {
 
   // cache the id
   var navbox = $('.nav-tabs');
@@ -185,4 +185,3 @@ $(document).ready(function() {
   }
 
 });
-
