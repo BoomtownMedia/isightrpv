@@ -1,3 +1,5 @@
+
+
 #construction {
   height: 600px;
 }
@@ -71,13 +73,7 @@ wrapper2{
   max-width: 100%;
   background-color: white;
 }
-video{
-height:600px; 
--webkit-background-size:cover;
--moz-background-size:cover;
--o-background-size:cover;
-background-size:cover;
-}
+
 video[poster] {
   object-fit: cover;
 }
@@ -233,5 +229,12 @@ a.tab {
   }
   .figure {
     text-align: inherit !important
+  }
+ 
+}
+
+@media (max-width: 777px) {
+ video {
+    height: 200px;
   }
 }
