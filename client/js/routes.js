@@ -50,3 +50,10 @@ FlowRouter.route('/services/infrastructure', {
     this.render('infrastructure');
   }
 });
+
+FlowRouter.route('/services', {
+  name: 'services',
+  action() {
+    this.render('agriculture');
+  }
+})
