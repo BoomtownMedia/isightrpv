@@ -1,4 +1,4 @@
-et xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 	<loc>https://isightrpv.com/</loc>
 	<lastmod>2020-01-30T18:48:28+00:00</lastmod>
@@ -18,6 +18,11 @@ et xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<loc>https://isightrpv.com/gallery</loc>
 	<lastmod>2020-01-30T18:48:28+00:00</lastmod>
 	<changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://isightrpv.com/flightpros</loc>
+  <lastmod>2020-04-30T18:48:28+00:00</lastmod>
+  <changefreq>monthly</changefreq>
 </url>
 <url>
 	<loc>https://isightrpv.com/services/agriculture</loc>

@@ -68,7 +68,28 @@ a#menu-item:hover > h4{
   paddin-top: 15px !important;
 }
 #homepage {
-  color: #fff !important;
+    /*color: #fff !important;*/
+    color: #007096 !important
+}
+#homepage:hover {
+    /*color: #fff !important;*/
+    color: #0A0A0A !important
+}
+#home-video-holder {
+    height:100%
+}
+#hero-gradient {
+    position: absolute;
+    z-index: 20;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.45);
+}
+#overlay-container {
+    position: absolute;
+    z-index: 500;
+    top: 10rem;
+    left: 10rem;
 }
 
 @media (max-width: 768px) {

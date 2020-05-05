@@ -30,6 +30,13 @@ FlowRouter.route('/contactus', {
   }
 });
 
+FlowRouter.route('/flightpros', {
+    name: 'flightpros',
+    action() {
+        this.render('flightpros');
+    }
+});
+
 FlowRouter.route('/services/agriculture', {
   name: 'agriculture',
   action() {

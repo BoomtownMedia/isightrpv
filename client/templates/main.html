@@ -10,14 +10,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#home"><img src="/images/logo.png" style="width: 110px"
-						alt="Blue/Black Aviator Wings ISight Logo" /></a>
-				<a class="navbar-brand navbar-left" href="#home"><span
-						style="color: #ffffff; font-size: 18px !important; font-weight: bold !important">ISIGHT
-					</span><span id="span2">| </span><span id="span3" style="color: #ffffff">RPV Services</span></a>
+				<a class="navbar-brand" href="#home"><img src="/images/ISight_Drone_Logo_2020-500x264.png" alt="Blue/Black Aviator Wings ISight Logo" style="max-width:300px;margin-top: -55px;" /></a>				
 			</div>
 
-			<div class="collapse navbar-collapse" id="navigation-example navbar-collapse-grid">
+			<div class="collapse navbar-collapse" id="navigation-example navbar-collapse-grid" style="padding-top: 1.25rem;">
 				<ul class="nav navbar-nav navbar-center">
 					<li class="dropdown mega-dropdown no-mobile">
 						<a id="homepage" data-toggle="dropdown" class="dropdown-toggle" role="button"
@@ -194,18 +190,26 @@
 
 
 		<div class="carousel-inner page-header" role="listbox">
-			<div class="item active">
-				<img class="first-slide header-filter" src="/images/frontpage1.jpg"
-					alt="Quadcopter drone flying at sunset" />
-				<div class="container">
-					<div class="animated fadeIn" align="left">
-						<h1>Professional Drone Operations</h1>
-						<p id="description">A BETTER PERSPECTIVE</p>
-						<p><a class="btn btn-lg btn-white" href="/services/agriculture" role="button">Learn more</a></p>
-					</div>
-
-				</div>
-			</div>
+            <div id="home-video-holder" class="item active">
+                <div id="hero-gradient">
+                    <!--placeholder for gradient-->
+                </div>
+                <div id="video-container">
+                    <video playsinline="" autoplay="" loop="" muted="">
+                        <source src="/images/Website-Video.mp4" type="video/mp4">
+                        <img class="first-slide header-filter" src="/images/frontpage1.jpg" alt="Quadcopter drone flying at sunset" />
+                    </video>
+                </div>
+                <div id="overlay-container">
+                    <div class="container">
+                        <div class="animated fadeIn" align="left">
+                            <h1>Professional Drone Operations</h1>
+                            <p id="description">A BETTER PERSPECTIVE</p>
+                            <p><a class="btn btn-lg btn-white" href="/services/agriculture" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 	</div><!-- /.carousel -->
 
