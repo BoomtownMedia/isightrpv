@@ -61,6 +61,6 @@ FlowRouter.route('/services/infrastructure', {
 FlowRouter.route('/services', {
   name: 'services',
   action() {
-    this.render('agriculture');
+    this.render('services');
   }
 })
