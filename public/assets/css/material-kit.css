@@ -2402,11 +2402,11 @@ select.form-control[multiple], .form-group.is-focused select.form-control[multip
 .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
   background-color: transparent;
 }
-.navbar .navbar-toggle .icon-bar {
-  background-color: inherit;
-  border: 1px solid;
-  color: #FFFFFF;
-}
+    .navbar .navbar-toggle .icon-bar {
+        background-color: inherit;
+        border: 1px solid;
+        color: #1A70A8;
+    }
 .navbar .navbar-default .navbar-toggle,
 .navbar .navbar-inverse .navbar-toggle {
   border-color: transparent;
@@ -8284,9 +8284,9 @@ select.selectpicker {
     z-index: 1;
   }
 
-  .navbar.navbar-transparent .navbar-toggle .icon-bar {
-    color: #FFFFFF;
-  }
+    .navbar.navbar-transparent .navbar-toggle .icon-bar {
+        color: #1A70A8;
+    }
 
   .navbar.navbar-default .navbar-toggle .icon-bar {
     color: inherit;

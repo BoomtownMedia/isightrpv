@@ -4,6 +4,17 @@
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px #eee !important;
   padding-bottom: 0px !important;
 }*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0
+}
+
 h1, .h1 {
   font-weight: 100 !important;
   color: white !important;
@@ -78,6 +89,9 @@ a#menu-item:hover > h4{
 #home-video-holder {
     height:100%
 }
+#video-container video {
+    height:100% !important;
+}
 #hero-gradient {
     position: absolute;
     z-index: 20;
@@ -92,12 +106,31 @@ a#menu-item:hover > h4{
     left: 10rem;
 }
 
+@media(max-width:1069px) {
+    #overlay-container {       
+        top: 4rem;
+        left: 8rem;
+    }    
+    h1, .h1 { font-size: 4rem !important;}
+}
+
 @media (max-width: 768px) {
   #homepage {
     color: #3C4858 !important;
   }
+    #overlay-container {
+        top: 0;
+        left: 4rem;
+        background: transparent;
+    }
 
-
+    h1, .h1 {
+        font-size: 3rem !important;
+    }
+    .page-header .container {
+        padding-top:6.25rem;
+        color: #FFFFFF;
+    }
 }
 
 @media (max-width: 666px) {
@@ -105,9 +138,14 @@ a#menu-item:hover > h4{
   .carousel-caption {
     bottom: 100px !important;
   }
+    #overlay-container {
+        top: 0;
+        left:0;
+    }
 
   .page-header .container {
-    padding-top: 30% !important;
+    padding-top: 20rem !important;
+    padding-right:1rem;
   }
 
 }
