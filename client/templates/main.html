@@ -62,23 +62,48 @@
 
     <!-- Carousel ================================================== -->
 
+    <style>
+        #video-bg {
+            position: relative;
+            width: auto;
+            min-width: 100%;
+            height: auto;
+            background: transparent url('/images/bkgvideo.jpg') no-repeat;
+            background-size: cover;
+        }
+
+        video {
+            display: block;
+        }
+
+        .video-container {
+            width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: -100;
+        }
+    </style>
+
 	<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
 		<div class="carousel-inner page-header" role="listbox">
             <div id="home-video-holder" class="item active">
                 <div id="hero-gradient">
                     <!--placeholder for gradient-->
                 </div>
-                <div id="video-container">
-                    <video playsinline="" autoplay="" loop="" muted="">
+                <div class="video-container">
+                    <video autoplay loop muted id="video-bg">
                         <source src="/images/WebsiteVideo_update.mp4" type="video/mp4">
-                        <img class="first-slide header-filter" src="/images/frontpage1.jpg" alt="Quadcopter drone flying at sunset" />
+                        <img class="first-slide header-filter" src="//images/bkgvideo.jpg" alt="Quadcopter drone flying at sunset" />
                     </video>
-                </div>
+                </div>                
                 <div id="overlay-container">
                     <div class="container">
                         <div class="animated fadeIn" align="left">
                             <h1>Professional Drone Operations</h1>
-                            <p id="description">A BETTER PERSPECTIVE</p>                           
+                            <p id="description">A BETTER PERSPECTIVE</p>
                         </div>
                     </div>
                 </div>
