@@ -107,29 +107,29 @@ Meteor.startup(function () {
 });
 
 //facebook feed
-Template.footer.onCreated(function () {
-  this.feed = new ReactiveVar();
+// Template.footer.onCreated(function () {
+//   this.feed = new ReactiveVar();
 
-  var link = "https://graph.facebook.com/v2.11/isightrpv?fields=posts.limit(3)"
-  var arguments = {
-    headers: { "User-Agent": "Meteor/1.1" },
-    params: {
-      "access_token": "956271767862418|2XmW6Fr58RZKChHtB8m20AhOSJ8",
-    }
-  };
-  Meteor.http.call('GET', link, arguments, function (error, response) {
-    this.feed.set(response.data);
-  }.bind(this));
-});
+//   var link = "https://graph.facebook.com/v2.11/isightrpv?fields=posts.limit(3)"
+//   var arguments = {
+//     headers: { "User-Agent": "Meteor/1.1" },
+//     params: {
+//       "access_token": "956271767862418|2XmW6Fr58RZKChHtB8m20AhOSJ8",
+//     }
+//   };
+//   Meteor.http.call('GET', link, arguments, function (error, response) {
+//     this.feed.set(response.data);
+//   }.bind(this));
+// });
 
-Template.footer.helpers({
-  feed1: function () {
-    return Template.instance().feed.get().posts.data[0].message;
-  },
-  feed2: function () {
-    return Template.instance().feed.get().posts.data[1].message;
-  }
-});
+// Template.footer.helpers({
+//   feed1: function () {
+//     return Template.instance().feed.get().posts.data[0].message;
+//   },
+//   feed2: function () {
+//     return Template.instance().feed.get().posts.data[1].message;
+//   }
+// });
 
 Meteor.setInterval(function () {
   HTTP.get("http://isightrpv.herokuapp.com");
