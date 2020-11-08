@@ -8,7 +8,7 @@
     "@babel/runtime": "^7.12.5",
     "babel-runtime": "^6.26.0",
     "jarallax": "^1.10.6",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "meteor-node-stubs": "^0.2.11",
     "moment": "^2.24.0",
     "prerender-node": "^3.2.5",
