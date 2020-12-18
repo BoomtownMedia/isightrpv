@@ -64,3 +64,9 @@ FlowRouter.route('/services', {
     this.render('services');
   }
 })
+FlowRouter.route('/services2', {
+  name: 'services2',
+  action() {
+    this.render('services2');
+  }
+})

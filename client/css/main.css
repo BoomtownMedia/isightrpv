@@ -20,8 +20,8 @@ h1, .h1 {
   color: white !important;
   font-size: 48px !important;
   font-size: 5rem !important;
-  letter-spacing: .05rem !important;
   line-height: 1.25 !important;  
+  letter-spacing: -0.04em !important;
 }
 .caret {
   color: #1799d5 !important;
@@ -103,7 +103,7 @@ a#menu-item:hover > h4{
     position: absolute;
     z-index: 500;
     top: 10rem;
-    left: 10rem;
+    left: 40rem;
 }
 
 @media(max-width:1069px) {
