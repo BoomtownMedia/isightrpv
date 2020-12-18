@@ -102,13 +102,12 @@ a#menu-item:hover > h4{
 #overlay-container {
     position: absolute;
     z-index: 500;
-    top: 10rem;
-    left: 40rem;
+    top: 30rem !important;
 }
 
 @media(max-width:1069px) {
     #overlay-container {       
-        top: 4rem;
+        top: 10rem;
         left: 8rem;
     }    
     h1, .h1 { font-size: 4rem !important;}
@@ -119,7 +118,7 @@ a#menu-item:hover > h4{
     color: #3C4858 !important;
   }
     #overlay-container {
-        top: 0;
+        top: 10rem;
         left: 4rem;
         background: transparent;
     }
@@ -139,8 +138,8 @@ a#menu-item:hover > h4{
     bottom: 100px !important;
   }
     #overlay-container {
-        top: 0;
-        left:0;
+        top: 10rem ;
+        left:2rem;
     }
 
   .page-header .container {
