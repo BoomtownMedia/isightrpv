@@ -49,3 +49,9 @@ a.navbar-brand.navbar-left {
   }
   
 }
+
+@media (max-width: 324px) {
+  .navbar.navbar-primary {
+    padding-top: 30px !important
+  }
+}
